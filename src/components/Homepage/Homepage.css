@@ -1,0 +1,122 @@
+/* Light theme styles */
+.light-theme .home,
+.light-theme .img-box,
+.light-theme .map,
+.light-theme .home-text,
+.light-theme .home-title,
+.light-theme .home-title span {
+  background-color: #fdf8ee;
+}
+
+.light-theme .stats-box,
+.light-theme .stats,
+.light-theme .stats-text,
+.light-theme .stats-icon,
+.light-theme .email {
+  background-color: #2f4858;
+  color: white;
+}
+
+/* Dark theme styles */
+.dark-theme .home,
+.dark-theme .map .dark-theme .home-text,
+.dark-theme .home-title,
+.dark-theme .home-title span {
+  background-color: #212121;
+}
+
+.dark-theme .stats-box,
+.dark-theme .stats,
+.dark-theme .stats-text,
+.dark-theme .stats-icon,
+.dark-theme .community,
+.dark-theme .community-text,
+.dark-theme .community-image {
+  background-color: #79858d;
+}
+
+.dark-theme .email-box,
+.dark-theme .email-text,
+.dark-theme .content,
+.dark-theme .input-box,
+.dark-theme .input-content,
+.dark-theme .input {
+  background-color: #fcf9f6;
+  color: #212121;
+}
+
+.learn-button {
+  background: var(
+    --Yellow-Orange-Gradient,
+    linear-gradient(180deg, #fcb813 0%, #f48120 100%)
+  );
+  color: #212121;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.map {
+  width: 2100px;
+}
+
+.stats {
+  top: 680px;
+  left: 180px;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.stats-box,
+.stats-icon {
+  display: flex;
+  background-color: #79858d;
+  align-items: center;
+}
+
+.stats-box {
+  padding: 0px 90px;
+}
+
+.stats-text {
+  padding-top: 10px;
+  margin-left: 10px;
+  background-color: #79858d;
+}
+
+.functionality-row h3 {
+  margin: 20px 0px;
+}
+
+.email-box {
+  border-radius: 75px;
+}
+
+.input-box {
+  border-radius: 60px;
+  border: 1px solid #fcf9f6;
+  background: #fff;
+  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.25);
+  width: 450px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+.submit-button {
+  background-color: #2f4858;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 60px;
+  width: 160px;
+  height: 75px;
+}
+
+.email-submit {
+  background: var(
+    --Yellow-Orange-Gradient,
+    linear-gradient(180deg, #fcb813 0%, #f48120 100%)
+  );
+  border-radius: 300px 160px 160px 300px;
+}

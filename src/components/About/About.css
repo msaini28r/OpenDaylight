@@ -1,0 +1,29 @@
+.light-theme .unleash,
+.light-theme .unleash-banner {
+  background-color: #fbf8e9;
+}
+
+.dark-theme .unleash,
+.dark-theme .unleash-banner {
+  background-color: #79858d;
+  color: #f1f1f1;
+}
+
+.unleash-title {
+  font-size: 60px;
+}
+
+.dark-theme .about-title,
+.dark-theme .sdn-title,
+.dark-theme .training-title,
+.dark-theme .link {
+  color: #f48120;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.dark-theme .training span {
+  color: #c3c3c3;
+}

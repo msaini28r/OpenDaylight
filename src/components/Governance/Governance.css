@@ -1,0 +1,54 @@
+.light-theme .governance-banner,
+.light-theme .governance-box,
+.light-theme .governance-title,
+.light-theme .governance-body {
+  background-color: #2f4858;
+  color: #f1f1f1;
+}
+
+.dark-theme .governance-banner,
+.dark-theme .governance-box,
+.dark-theme .governance-title,
+.dark-theme .governance-body {
+  background-color: #79858d;
+  color: #f1f1f1;
+}
+.dark-theme .tsc-title {
+  color: #f48120;
+}
+.tsc-title {
+  font-size: 25px;
+  font-style: bold;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.tsc-body {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.dark-theme .cards,
+.dark-theme .social-links {
+  background-color: transparent;
+}
+
+.dark-theme .cards-box {
+  border: 0.5px whitesmoke solid;
+}
+
+.light-theme .cards-box {
+  border: 0.2px #2f4858 dotted;
+}
+
+.light-theme .cards-box:hover {
+  filter: drop-shadow(0px 2px 20px rgba(47, 72, 88, 0.4));
+  transition: 0.3s;
+}
+
+.dark-theme .cards-box:hover {
+  filter: drop-shadow(0px 2px 20px rgba(245, 131, 32, 0.4));
+  transition: 0.3s;
+}

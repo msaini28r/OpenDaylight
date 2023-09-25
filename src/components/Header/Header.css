@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-link ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  position: relative;
+}
+
+.join-button {
+  background: var(
+    --Yellow-Orange-Gradient,
+    linear-gradient(180deg, #fcb813 0%, #f48120 100%)
+  );
+  color: #212121 !important;
+  border-radius: 30px;
+  padding: 4px 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.svg-icons {
+  display: flex;
+  gap: 30px;
+  margin-left: 30px;
+  align-items: center;
+}
+
+/*Tablet view*/
+@media screen and (min-width: 390px) and (max-width: 1024px) {
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    text-align: end;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.open .nav-link {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-link li {
+    margin: 1rem 0;
+  }
+  .nav-link ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    padding: 0.5rem 2.5rem;
+  }
+}

@@ -1,0 +1,22 @@
+.nro-boxes {
+  background-color: white !important;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 45px;
+}
+
+.nro-boxes .column {
+  background-color: white;
+  color: white;
+}
+
+.nro-boxes p {
+  color: black;
+  background-color: #fff;
+}
+
+.nro-boxes h3 {
+  color: black;
+  background-color: #fff;
+}

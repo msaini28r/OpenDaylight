@@ -1,0 +1,30 @@
+.light-theme .started-banner,
+.light-theme .started-box,
+.light-theme .started-title,
+.light-theme .started-body,
+.light-theme .started-span,
+.light-theme .buttons {
+  background-color: #2f4858;
+  color: #f1f1f1;
+}
+
+.dark-theme .started-banner,
+.dark-theme .started-box,
+.dark-theme .started-title,
+.dark-theme .started-body,
+.dark-theme .started-span,
+.dark-theme .buttons {
+  background-color: #79858d;
+  color: #f1f1f1;
+}
+
+.download-button {
+  background: var(
+    --Yellow-Orange-Gradient,
+    linear-gradient(180deg, #fcb813 0%, #f48120 100%)
+  );
+  color: #212121;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+}
