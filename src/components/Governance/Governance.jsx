@@ -1,8 +1,6 @@
 import React from 'react'
 import './Governance.css'
 import Anil from '../../images/Anil.png'
-import Cedric from '../../images/Cedric.png'
-import Guillaume from '../../images/Guillaume.png'
 import Ivan from '../../images/Ivan.png'
 import Manoj from '../../images/Manoj.png'
 import Robert from '../../images/Robert.png'
@@ -18,18 +16,6 @@ const people = [
     image: Anil,
     linkedin: 'https://www.linkedin.com/in/abelur/',
     email: 'abelur@linuxfoundation.org',
-  },
-  {
-    name: 'Cédric Ollivier',
-    image: Cedric,
-    linkedin: 'https://www.linkedin.com/in/cedric-ollivier/',
-    email: 'cedric.ollivier@orange.com',
-  },
-  {
-    name: 'Guillaume Lambert',
-    image: Guillaume,
-    linkedin: 'https://www.linkedin.com/in/guillaume-lambert-838872/',
-    email: 'gilles.thouenon@orange.com',
   },
   {
     name: 'Ivan Hraško',
@@ -131,7 +117,7 @@ const Governance = () => {
         <div className="members-heading">
           <h2 className="text-center pb-10">TSC Members</h2>
         </div>
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid sm:grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           {/* Using map so that new card automatically get's created when new person is added. */}
           {people.map((person, index) => (
             <div

@@ -28,3 +28,11 @@
   font-style: normal;
   font-weight: 600;
 }
+
+.light-theme .name {
+  color: #ff7426;
+}
+
+.dark-theme .name {
+  color: #ff7426;
+}

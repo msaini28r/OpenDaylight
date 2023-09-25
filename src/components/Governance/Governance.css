@@ -29,26 +29,3 @@
   font-weight: 400;
   line-height: 30px;
 }
-
-.dark-theme .cards,
-.dark-theme .social-links {
-  background-color: transparent;
-}
-
-.dark-theme .cards-box {
-  border: 0.5px whitesmoke solid;
-}
-
-.light-theme .cards-box {
-  border: 0.2px #2f4858 dotted;
-}
-
-.light-theme .cards-box:hover {
-  filter: drop-shadow(0px 2px 20px rgba(47, 72, 88, 0.4));
-  transition: 0.3s;
-}
-
-.dark-theme .cards-box:hover {
-  filter: drop-shadow(0px 2px 20px rgba(245, 131, 32, 0.4));
-  transition: 0.3s;
-}
