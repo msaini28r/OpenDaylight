@@ -17,7 +17,7 @@ const Header = ({ theme, toggleTheme, rotation }) => {
     <div className="container mx-auto py-5">
       <nav className={`navbar ${isOpen ? 'open' : ''}`}>
         <div className="logo">
-          <Link to="/homepage">
+          <Link to="/">
             {theme === 'dark-theme' ? (
               <img
                 src={odl_light_logo}
