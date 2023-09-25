@@ -66,7 +66,7 @@ const personality = [
     designation: 'Marketing & Communication Director',
     description: 'Passionate designer with a keen eye for user-centric design.',
     company: 'The Linux Foundation',
-    linkedin: 'https://www.linkedin.com/in/caseycain1/',
+    linkedin: 'https://www.linkedin.com/in/jilllovato/',
     gmail: 'jlovato@linuxfoundation.org',
   },
   {
@@ -75,7 +75,8 @@ const personality = [
     designation: 'TSC Chair, OpenDaylight',
     description: 'Passionate designer with a keen eye for user-centric design.',
     company: 'Nvidia',
-    linkedin: 'https://www.linkedin.com/in/caseycain1/',
+    linkedin:
+      'https://www.linkedin.com/in/venkatrangan-govindarajan-sdn-test-automation/',
     gmail: 'gvrangan@gmail.com',
   },
 ]
@@ -153,15 +154,17 @@ const GettingStarted = () => {
             Need help related to something? Reach out to us.
           </p>
         </div>
-        <div className="personility grid sm:grid-cols-1 md:grid-cols-3 gap-24">
+        <div className="personility grid sm:grid-cols-1 md:grid-cols-3 gap-9">
           {personality.map((personality, index) => (
-            <div className="media-card border w-11/12 rounded-xl p-4">
-              <div className="image flex justify-center items-center mb-6">
+            <div className="media-card border w-10/12 rounded-xl p-4">
+              <div className="image flex justify-center mb-6">
                 <img className="rounded-xl" src={personality.image} alt="" />
               </div>
               <div className="card-info mb-6">
                 <h4 className="mb-3">{personality.name}</h4>
-                <p className="text-normal mb-3">{personality.designation}</p>
+                <p className="text-normal font-semibold mb-3">
+                  {personality.designation}
+                </p>
                 <p className="text-base w-11/12 mb-3">
                   {personality.description}
                 </p>
@@ -178,7 +181,11 @@ const GettingStarted = () => {
                   >
                     <img src={gmail} alt="" />
                   </a>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={personality.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img src={linkedin_2} alt="" />
                   </a>
                 </div>
