@@ -10,13 +10,13 @@ import training_dark from '../../images/training_dark.png'
 const About = ({ theme }) => {
   return (
     <div>
-      <div className="unleash p-10">
+      <div className="unleash p-14">
         <div className="unleash-banner container mx-auto text-center ">
-          <h1 className="unleash-banner unleash-title uppercase py-6 font-bold">
+          <h1 className="unleash-banner unleash-title text-6xl uppercase py-7 font-bold">
             Unleash the power of
             <span className="unleash-banner block font-bold">OpenDaylight</span>
           </h1>
-          <p className="unleash-banner text-center px-32 intro">
+          <p className="unleash-banner text-xl font-normal text-center xl:px-24 xxl:px-32 leading-6">
             Founded in 2013, OpenDaylight is part of LF Networking (LFN), an
             entity that integrates the governance of participating projects in
             order to enhance operational excellence, simplify member engagement,
