@@ -5,8 +5,7 @@ import Ivan from '../../images/Ivan.png'
 import Manoj from '../../images/Manoj.png'
 import Robert from '../../images/Robert.png'
 import Venkatrangan from '../../images/Venkatrangan.png'
-// import Mohit from '../../images/Mohit.png'
-// import Github from '../../images/Github.png'
+import Gilles from '../../images/Gilles.png'
 import Linkedin from '../../images/Linkedin.png'
 import Email from '../../images/Email.png'
 
@@ -42,12 +41,12 @@ const people = [
       'https://www.linkedin.com/in/venkatrangan-govindarajan-sdn-test-automation/',
     email: 'gvrangan@gmail.com',
   },
-  // {
-  //   name: 'Mohit Saini',
-  //   image: Mohit,
-  //   linkedin: 'https://www.linkedin.com/in/msaini28r/',
-  //   email: 'msaini1r@gmail.com',
-  // },
+  {
+    name: 'Gilles Thouenon',
+    image: Gilles,
+    linkedin: 'https://www.linkedin.com/in/gilles-thouenon-2660b564/',
+    email: 'gilles.thouenon@orange.com',
+  },
   // Add more people here
 ]
 
