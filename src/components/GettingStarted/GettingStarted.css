@@ -29,10 +29,12 @@
   font-weight: 600;
 }
 
-.light-theme .name {
+.light-theme .name,
+.light-theme .company-name {
   color: #ff7426;
 }
 
-.dark-theme .name {
+.dark-theme .name,
+.dark-theme .company-name {
   color: #ff7426;
 }

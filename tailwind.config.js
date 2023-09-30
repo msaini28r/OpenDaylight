@@ -8,10 +8,10 @@ module.exports = {
   daisyui: {
     screens: {
       sm: '390px',
-      // => mobile view
+      // => small mobile phones view
 
       md: '768px',
-      // => bigger mobile view
+      // => bigger mobile phones view
 
       lg: '1024px',
       // => tablet view
@@ -20,7 +20,7 @@ module.exports = {
       // => laptop view
 
       xxl: '1536px',
-      // => desktop/ultrawide view
+      // => desktop view
     },
   },
 }

@@ -63,7 +63,7 @@ const personality = [
   {
     image: Casey,
     name: 'Jill Lovato',
-    designation: 'Marketing & Communication Director',
+    designation: 'Marketing, Communication Director',
     description: 'Passionate designer with a keen eye for user-centric design.',
     company: 'The Linux Foundation',
     linkedin: 'https://www.linkedin.com/in/jilllovato/',
@@ -85,12 +85,12 @@ const GettingStarted = () => {
   return (
     <div>
       <div className="started-banner mb-20">
-        <div className="started-box container mx-auto text-center p-20">
+        <div className="started-box container mx-auto text-center p-12">
           <div>
-            <h1 className="started-title pb-9 text-7xl">
+            <h1 className="started-title pb-9 xl:text-7xl">
               Get <span className="started-span">Started</span>
             </h1>
-            <p className="started-body px-52 text-center text-2xl mb-8">
+            <p className="started-body xl:px-32 xxl:px-52 text-center text-2xl mb-8">
               Whether you’re a user, an engineer working for a solution
               provider, or an independent developer with a personal interest in
               open networking, there’s no better way to help drive forward the
@@ -154,9 +154,9 @@ const GettingStarted = () => {
             Need help related to something? Reach out to us.
           </p>
         </div>
-        <div className="personility grid sm:grid-cols-1 md:grid-cols-3 gap-9">
+        <div className="personility grid sm:grid-cols-1 md:grid-cols-3 xl:gap-2 xxl:gap-9">
           {personality.map((personality, index) => (
-            <div className="media-card border w-10/12 rounded-xl p-4">
+            <div className="media-card border xl:w-11/12 xxl:w-10/12 rounded-xl p-4">
               <div className="image flex justify-center mb-6">
                 <img className="rounded-xl" src={personality.image} alt="" />
               </div>
@@ -173,7 +173,7 @@ const GettingStarted = () => {
                 <div>
                   <p className="company-name">{personality.company}</p>
                 </div>
-                <div className="flex space-x-5">
+                <div className="flex xl:space-x-3 xxl:space-x-5">
                   <a
                     href={`mailto:${personality.gmail}`}
                     target="_blank"

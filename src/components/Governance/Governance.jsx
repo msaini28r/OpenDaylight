@@ -5,7 +5,9 @@ import Ivan from '../../images/Ivan.png'
 import Manoj from '../../images/Manoj.png'
 import Robert from '../../images/Robert.png'
 import Venkatrangan from '../../images/Venkatrangan.png'
-import Gilles from '../../images/Gilles.png'
+import Gillies from '../../images/Gillies.png'
+// import Mohit from '../../images/Mohit.png'
+// import Github from '../../images/Github.png'
 import Linkedin from '../../images/Linkedin.png'
 import Email from '../../images/Email.png'
 
@@ -35,7 +37,7 @@ const people = [
     email: 'nite@hq.sk',
   },
   {
-    name: 'Venkatrangan Govindaragan',
+    name: 'Venkatrangan',
     image: Venkatrangan,
     linkedin:
       'https://www.linkedin.com/in/venkatrangan-govindarajan-sdn-test-automation/',
@@ -43,7 +45,7 @@ const people = [
   },
   {
     name: 'Gilles Thouenon',
-    image: Gilles,
+    image: Gillies,
     linkedin: 'https://www.linkedin.com/in/gilles-thouenon-2660b564/',
     email: 'gilles.thouenon@orange.com',
   },
@@ -55,10 +57,10 @@ const Governance = () => {
     <div>
       <div className="governance-banner">
         <div className="governance-box container mx-auto text-center p-20">
-          <h1 className="governance-title pb-9 text-7xl">
+          <h1 className="governance-title pb-9 xl:text-6xl xxl:text-7xl">
             Committed to the Future
           </h1>
-          <p className="governance-body px-52 text-center text-2xl">
+          <p className="governance-body xl:px-28 xxl:px-52 text-center text-2xl">
             OpenDaylight is a founding project of{' '}
             <span className="governance-body font-bold underline underline-offset-4">
               LF Networking (LFN)
@@ -116,7 +118,7 @@ const Governance = () => {
         <div className="members-heading">
           <h2 className="text-center pb-10">TSC Members</h2>
         </div>
-        <div className="grid sm:grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid sm:grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 align-middle">
           {/* Using map so that new card automatically get's created when new person is added. */}
           {people.map((person, index) => (
             <div
@@ -127,10 +129,10 @@ const Governance = () => {
                 <img
                   src={person.image}
                   alt={`Person ${index}`}
-                  className="cards w-36 h-2w-20 rounded-full"
+                  className="cards w-36 h-2w rounded-full"
                 />
               </div>
-              <div className="cards my-4 pl-4 pt-5">
+              <div className="cards my-4 pl-8 pt-5">
                 <h2 className="cards text-xl font-semibold ">{person.name}</h2>
                 <div className="social-links mt-3 flex gap-2">
                   <a
