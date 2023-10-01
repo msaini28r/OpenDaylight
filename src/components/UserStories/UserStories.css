@@ -1,3 +1,30 @@
+/* Light theme styles */
+.light-theme .user,
+.light-theme .user-text,
+.light-theme .odl-logo,
+.light-theme .user-title,
+.light-theme .user-title span {
+  background-color: #fdf8ee;
+}
+
+.dark-theme .user-stories,
+.dark-theme .odl-logo,
+.dark-theme .user-text,
+.dark-theme .user-title,
+.dark-theme .user-title span {
+  background: #afb2b4;
+  color: #f5f5f5;
+}
+
+.dark-theme .user-title,
+.dark-theme .user-title span {
+  color: #212121;
+}
+
 .odl-logo {
-  width: 1600px;
+  width: 1650px;
+}
+
+.user-stories {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }

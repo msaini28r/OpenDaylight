@@ -55,14 +55,6 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
                   <summary className={textColor}>Solutions</summary>
                   <ul className="p-2 w-64">
                     <li>
-                      <Link
-                        to="/network-resource-optimization"
-                        className={textColor}
-                      >
-                        Network Resource Optimization
-                      </Link>
-                    </li>
-                    <li>
                       <Link to="/platform-overview" className={textColor}>
                         Platform Overview
                       </Link>
@@ -78,6 +70,14 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
                         className={textColor}
                       >
                         Automated Delivery System
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/network-resource-optimization"
+                        className={textColor}
+                      >
+                        Network Resource Optimization
                       </Link>
                     </li>
                   </ul>
@@ -131,14 +131,6 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
               <summary className={textColor}>Solutions</summary>
               <ul className="p-2 w-72 z-20 text-xs">
                 <li>
-                  <Link
-                    to="/network-resource-optimization"
-                    className={textColor}
-                  >
-                    Network Resource Optimization
-                  </Link>
-                </li>
-                <li>
                   <Link to="/platform-overview" className={textColor}>
                     Platform Overview
                   </Link>
@@ -151,6 +143,14 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
                 <li>
                   <Link to="/automated-service-delivery" className={textColor}>
                     Automated Delivery System
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/network-resource-optimization"
+                    className={textColor}
+                  >
+                    Network Resource Optimization
                   </Link>
                 </li>
               </ul>

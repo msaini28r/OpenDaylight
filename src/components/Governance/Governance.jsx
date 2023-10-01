@@ -5,9 +5,7 @@ import Ivan from '../../images/Ivan.png'
 import Manoj from '../../images/Manoj.png'
 import Robert from '../../images/Robert.png'
 import Venkatrangan from '../../images/Venkatrangan.png'
-import Gillies from '../../images/Gillies.png'
-// import Mohit from '../../images/Mohit.png'
-// import Github from '../../images/Github.png'
+import Gilles from '../../images/Gilles.png'
 import Linkedin from '../../images/Linkedin.png'
 import Email from '../../images/Email.png'
 
@@ -45,7 +43,7 @@ const people = [
   },
   {
     name: 'Gilles Thouenon',
-    image: Gillies,
+    image: Gilles,
     linkedin: 'https://www.linkedin.com/in/gilles-thouenon-2660b564/',
     email: 'gilles.thouenon@orange.com',
   },

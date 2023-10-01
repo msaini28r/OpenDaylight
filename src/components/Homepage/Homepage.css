@@ -19,7 +19,8 @@
 
 /* Dark theme styles */
 .dark-theme .home,
-.dark-theme .map .dark-theme .home-text,
+.dark-theme .map,
+.dark-theme .home-text,
 .dark-theme .home-title,
 .dark-theme .home-title span {
   background-color: #212121;
