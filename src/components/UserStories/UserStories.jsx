@@ -47,7 +47,9 @@ const UserStories = ({ theme }) => {
                 We present you a proposal and Providing on-demand services that
                 may be controlled by the end userdiscuss niffty-gritty like
               </p>
-              <a href="http://">Read More</a>
+              <a className="read-more" href="http://">
+                Read More
+              </a>
             </div>
           </div>
           <div className="nro-card px-2 rounded-3xl border shadow-xl w-1/5 absolute">
@@ -57,7 +59,9 @@ const UserStories = ({ theme }) => {
               <p className="mb-5">
                 Dynamically optimizing the network based on load and state.
               </p>
-              <a href="http://">Read More</a>
+              <a className="read-more" href="http://">
+                Read More
+              </a>
             </div>
           </div>
           <div className="nfv-card px-2 rounded-3xl border shadow-xl w-1/5 absolute">
@@ -68,7 +72,9 @@ const UserStories = ({ theme }) => {
                 Providing on-demand services that may be controlled by the end
                 user or service provider environment.
               </p>
-              <a href="http://">Read More</a>
+              <a className="read-more" href="http://">
+                Read More
+              </a>
             </div>
           </div>
           <div className="visibility-card px-2 rounded-3xl border shadow-xl w-1/5 absolute">
@@ -79,7 +85,9 @@ const UserStories = ({ theme }) => {
                 Centralized administration of the network and/or multiple
                 controllers. This is sometimes used as a precursor to NRO.
               </p>
-              <a href="http://">Read More</a>
+              <a className="read-more" href="http://">
+                Read More
+              </a>
             </div>
           </div>
         </div>

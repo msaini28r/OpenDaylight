@@ -15,7 +15,8 @@
 .dark-theme .user-title,
 .dark-theme .user-title span,
 .dark-theme .testimonials,
-.dark-theme .testimonials-title {
+.dark-theme .testimonials-title,
+.dark-theme .blue-box {
   background: #79858d;
 }
 
@@ -54,8 +55,24 @@
   left: 150px;
 }
 
-.success-text {
+.dark-theme .success-box {
+  background-color: #676e76;
+}
+.light-theme .success-text {
   background: #fff5db;
+}
+
+.dark-theme .success-text {
+  background: #676e76;
+  color: #fdc221;
+}
+
+.dark-theme .read-more {
+  color: #fdc221;
+}
+
+.light-theme .read-more {
+  color: #2539ed;
 }
 
 .asd-card {
