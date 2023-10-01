@@ -3,9 +3,6 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {},
-  },
-  plugins: [require('daisyui')],
-  daisyui: {
     screens: {
       sm: '390px',
       // => small mobile phones view
@@ -23,4 +20,6 @@ module.exports = {
       // => desktop view
     },
   },
+  plugins: [require('daisyui')],
+  daisyui: {},
 }

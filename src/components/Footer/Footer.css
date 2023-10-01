@@ -33,8 +33,10 @@
   letter-spacing: -0.7px;
 }
 
-.footer span p {
+.footer .heading {
   color: orange;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .resources {
@@ -42,7 +44,7 @@
 }
 
 .links {
-  flex-basis: 5%;
+  flex-basis: 8%;
 }
 
 .resources li,

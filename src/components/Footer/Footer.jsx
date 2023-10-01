@@ -37,8 +37,8 @@ const Footer = ({ theme }) => {
           </div>
           <div className="resources">
             <ul>
-              <span style={{ color: 'orange', fontSize: '18px' }}>
-                <p>Resources</p>
+              <span>
+                <p className="heading"> Resources</p>
               </span>
               <li>About</li>
               <li>Solutions</li>
@@ -47,8 +47,8 @@ const Footer = ({ theme }) => {
           </div>
           <div className="links">
             <ul>
-              <span style={{ color: 'orange', fontSize: '18px' }}>
-                <p>Links</p>
+              <span>
+                <p className="heading">Links</p>
               </span>
               <li>Gerrit</li>
               <li>LinkedIn</li>
