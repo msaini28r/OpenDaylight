@@ -5,7 +5,8 @@
 .light-theme .user-title,
 .light-theme .user-title span,
 .light-theme .testimonials,
-.light-theme .testimonials-title {
+.light-theme .testimonials-title,
+.light-theme .odl-image {
   background-color: #fff8e6;
 }
 
@@ -16,8 +17,10 @@
 .dark-theme .user-title span,
 .dark-theme .testimonials,
 .dark-theme .testimonials-title,
-.dark-theme .blue-box {
+.dark-theme .blue-box,
+.dark-theme .odl-image {
   background: #79858d;
+  color: #f5f5ff;
 }
 
 .dark-theme .user-title,
@@ -97,4 +100,56 @@
 
 .card-image {
   width: 100px;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1536px) {
+  .odl-logo {
+    width: 1200px;
+  }
+
+  .user-stories {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 93%);
+  }
+
+  .blue-box {
+    background-color: #f5f9ff;
+    border-radius: 150px 0px 0px 0px;
+    width: 1000px;
+    height: 550px;
+  }
+
+  .success-box {
+    border-radius: 100px 0px 0px 0px;
+    background: #fff5db;
+    backdrop-filter: blur(2px);
+    width: 416px;
+    height: 320px;
+    flex-shrink: 0;
+    top: 960px;
+    left: 50px;
+  }
+
+  .asd-card {
+    top: 700px;
+    left: 40%;
+  }
+
+  .nro-card {
+    top: 1140px;
+    left: 40%;
+  }
+
+  .nfv-card {
+    top: 650px;
+    left: 70%;
+  }
+
+  .visibility-card {
+    top: 1080px;
+    left: 70%;
+  }
+
+  .card-image {
+    width: 100px;
+  }
 }
