@@ -16,16 +16,3 @@
 .dark-theme .tsc-title {
   color: #f48120;
 }
-.tsc-title {
-  font-size: 25px;
-  font-style: bold;
-  font-weight: 600;
-  line-height: 140%;
-}
-
-.tsc-body {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}

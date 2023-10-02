@@ -54,15 +54,18 @@ const Governance = () => {
   return (
     <div>
       <div className="governance-banner">
-        <div className="governance-box container mx-auto text-center p-20">
-          <h1 className="governance-title pb-9 xl:text-6xl xxl:text-7xl">
+        <div className="governance-box container mx-auto text-center xl:p-14 xxl:p-28">
+          <h1 className="governance-title pb-8 xl:text-4xl xxl:text-7xl uppercase">
             Committed to the Future
           </h1>
-          <p className="governance-body xl:px-28 xxl:px-52 text-center text-2xl">
+          <p className="governance-body xl:text-lg xxl:text-2xl font-normal xl:px-56 xxl:px-32 text-center">
             OpenDaylight is a founding project of{' '}
-            <span className="governance-body font-bold underline underline-offset-4">
+            <a
+              href="https://lfnetworking.org/"
+              className="governance-body font-bold underline underline-offset-4"
+            >
               LF Networking (LFN)
-            </span>
+            </a>
             . LFN integrates the governance of participating projects in order
             to improve operational efficiencies and simplify member engagement.
             Each technical project retains its technical independence and
@@ -70,11 +73,13 @@ const Governance = () => {
           </p>
         </div>
       </div>
-      <div className="container mx-auto tsc-explain">
-        <div className="tsc-columns grid grid-cols-3 gap gap-12 py-7">
+      <div className="container mx-auto tsc-explain px-4">
+        <div className="tsc-columns grid grid-cols-3 gap gap-12 my-6">
           <div className="tsc-theory text-center py-8">
-            <h3 className="tsc-title pb-5">What is TSC</h3>
-            <p className="tsc-body">
+            <h3 className="tsc-title pb-5 xl:text-3xl xxl:text-4xl">
+              What is TSC
+            </h3>
+            <p className="tsc-body xl:text-base xxl:text-xl">
               TSC stands for "Technical Steering Committee." The Technical
               Steering Committee is a group of individuals within an
               organization or project responsible for providing technical
@@ -85,11 +90,11 @@ const Governance = () => {
             </p>
           </div>
           <div className="tsc-members text-center py-8">
-            <h3 className="tsc-title pb-5">
+            <h3 className="tsc-title pb-5 xl:text-3xl xxl:text-4xl">
               How can I become a{' '}
               <span className="tsc-title block">TSC Member?</span>
             </h3>
-            <p className="tsc-body">
+            <p className="tsc-body xl:text-base xxl:text-xl">
               OpenDaylight welcomes participation from anyone, allowing them to
               develop and contribute code, become elected members of the TSC,
               and contribute to the project's progress in various ways. The TSC
@@ -99,8 +104,10 @@ const Governance = () => {
             </p>
           </div>
           <div className="tsc-governance text-center py-8">
-            <h3 className="tsc-title pb-5">Our Governance Model</h3>
-            <p className="tsc-body">
+            <h3 className="tsc-title pb-5 xl:text-3xl xxl:text-4xl">
+              Our Governance Model
+            </h3>
+            <p className="tsc-body xl:text-base xxl:text-xl">
               OpenDaylight follows an open governance model to ensure
               transparent decision-making and community participation. To
               understand more about OpenDaylight's governance model, you can
@@ -112,7 +119,7 @@ const Governance = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto py-16">
+      <div className="container mx-auto mt-5 mb-16">
         <div className="members-heading">
           <h2 className="text-center pb-10">TSC Members</h2>
         </div>
@@ -127,7 +134,7 @@ const Governance = () => {
                 <img
                   src={person.image}
                   alt={`Person ${index}`}
-                  className="cards w-36 h-2w rounded-full"
+                  className="xl:w-32 xxl:w-36 h-1w rounded-full"
                 />
               </div>
               <div className="cards my-4 pl-8 pt-5">

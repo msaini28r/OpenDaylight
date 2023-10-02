@@ -85,12 +85,12 @@ const GettingStarted = () => {
   return (
     <div>
       <div className="started-banner mb-20">
-        <div className="started-box container mx-auto text-center p-12">
+        <div className="started-box container mx-auto text-center xl:p-10 xxl:p-20">
           <div>
-            <h1 className="started-title pb-9 xl:text-7xl">
+            <h1 className="started-title xl:pb-6 xxl:pb-9 xl:text-5xl xxl:text-7xl">
               Get <span className="started-span">Started</span>
             </h1>
-            <p className="started-body xl:px-32 xxl:px-52 text-center text-2xl mb-8">
+            <p className="started-body xl:px-44 xxl:px-48 text-center xl:text-lg xxl:text-2xl mb-9">
               Whether you’re a user, an engineer working for a solution
               provider, or an independent developer with a personal interest in
               open networking, there’s no better way to help drive forward the
@@ -130,15 +130,17 @@ const GettingStarted = () => {
               className="cards-box px-2 rounded-lg shadow-xl w-11/12"
             >
               <div className="cards my-4 pl-4 pt-5">
-                <h2 className="cards text-3xl font-semibold mb-5">
+                <h2 className="cards xl:text-2xl xxl:text-3xl font-semibold mb-5">
                   {resources.heading}
                 </h2>
-                <p className="mb-5 w-11/12">{resources.description}</p>
+                <p className="mb-5 w-11/12 xl:text-base xxl:text-base">
+                  {resources.description}
+                </p>
                 <a
                   href={resources.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="name underline underline-offset-4 decoration-orange-500"
+                  className="name underline underline-offset-4 decoration-orange-500 xl:text-sm xxl:text-base"
                 >
                   {resources.name}
                 </a>
@@ -147,10 +149,12 @@ const GettingStarted = () => {
           ))}
         </div>
       </div>
-      <div className="container mx-auto media-personality  mb-20">
+      <div className="container mx-auto media-personality mb-20">
         <div className="resources-title mb-20">
-          <h2 className="text-center mb-10">Key Contacts</h2>
-          <p className="text-center text-2xl">
+          <h2 className="text-center xl:text-3xl xxl:text-4xl xl:mb-7 xxl:mb-10">
+            Key Contacts
+          </h2>
+          <p className="text-center xl:text-xl xxl:text-2xl">
             Need help related to something? Reach out to us.
           </p>
         </div>
@@ -160,12 +164,14 @@ const GettingStarted = () => {
               <div className="image flex justify-center mb-6">
                 <img className="rounded-xl" src={personality.image} alt="" />
               </div>
-              <div className="card-info mb-6">
-                <h4 className="mb-3">{personality.name}</h4>
+              <div className="card-info xl:mb-4 xxl:mb-5">
+                <h4 className="mb-3 xl:text-lg xxl:text-xl">
+                  {personality.name}
+                </h4>
                 <p className="text-normal font-semibold mb-3">
                   {personality.designation}
                 </p>
-                <p className="text-base w-11/12 mb-3">
+                <p className="xl:text-sm xxl:text-base w-11/12">
                   {personality.description}
                 </p>
               </div>
