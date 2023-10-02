@@ -10,23 +10,34 @@ import training_dark from '../../images/training_dark.png'
 const About = ({ theme }) => {
   return (
     <div>
-      <div className="unleash p-14">
+      <div className="unleash xl:p-8 xxl:p-16">
         <div className="unleash-banner container mx-auto text-center ">
-          <h1 className="unleash-banner unleash-title text-6xl uppercase py-7 font-bold">
+          <h1 className="unleash-banner unleash-title xl:text-4xl xxl:text-7xl uppercase py-7 font-extrabold">
             Unleash the power of
             <span className="unleash-banner block font-bold">OpenDaylight</span>
           </h1>
-          <p className="unleash-banner text-2xl font-normal text-center xl:px-20 xxl:px-32 leading-7">
-            OpenDaylight, established in 2013, is a part of LF Networking (LFN),
-            an organization that brings together various networking projects to
-            improve collaboration and operational efficiency while preserving
-            each project's technical independence and roadmap.
+          <p
+            className="unleash-body xl:text-base xxl:text-2xl font-normal xl:px-56
+           xxl:px-32 leading-7"
+          >
+            Founded in 2013, OpenDaylight is part of LF Networking (LFN), an
+            entity that integrates the governance of participating projects in
+            order to enhance operational excellence, simplify member engagement,
+            and increase collaboration across open source networking projects
+            and standards bodies. Each technical project retains its technical
+            independence and project roadmaps.{' '}
+            <a
+              href="https://lfnetworking.org/"
+              className="unleash-body lfn-link"
+            >
+              Learn more about LFN.
+            </a>
           </p>
         </div>
       </div>
       <div className="container mx-auto">
-        <div className="about py-16 grid sm:grid-cols-1 md:grid-cols-2">
-          <div className="about-text text-start ">
+        <div className="about py-16 grid sm:grid-cols-1 xl:grid-cols-2">
+          <div className="about-text text-start xl:text-sm xxl:text-base">
             <h2 className="about-title pb-5">About OpenDaylight</h2>
             <p className="text-justify pb-5">
               Founded in 2013, OpenDaylight is part of LF Networking (LFN), an
@@ -64,13 +75,13 @@ const About = ({ theme }) => {
           <div className="about-image flex justify-center">
             {theme === 'dark-theme' ? (
               <img
-                style={{ width: 400 }}
+                className="about-icon"
                 src={about_dark}
                 alt="ODL Dark Logo"
               />
             ) : (
               <img
-                style={{ width: 400 }}
+                className="about-icon"
                 src={about_light}
                 alt="ODL Light Logo"
               />
@@ -78,22 +89,14 @@ const About = ({ theme }) => {
           </div>
         </div>
         <div className="sdn py-16 grid sm:grid-cols-1 md:grid-cols-2">
-          <div className="sdn-image flex justify-start items-center">
+          <div className="sdn-image">
             {theme === 'dark-theme' ? (
-              <img
-                style={{ width: 600, height: 600 }}
-                src={sdn_dark}
-                alt="ODL Dark Logo"
-              />
+              <img className="sdn-icon" src={sdn_dark} alt="ODL Dark Logo" />
             ) : (
-              <img
-                style={{ width: 600, height: 600 }}
-                src={sdn_light}
-                alt="ODL Light Logo"
-              />
+              <img className="sdn-icon" src={sdn_light} alt="ODL Light Logo" />
             )}
           </div>
-          <div className="sdn-text text-start ">
+          <div className="sdn-text text-start xl:text-sm xxl:text-base">
             <h2 className="sdn-title pb-5">What is SDN?</h2>
             <p className="text-justify pb-5">
               The modern software-defined networking (SDN) movement grew out of
@@ -147,7 +150,7 @@ const About = ({ theme }) => {
           </div>
         </div>
         <div className="training py-16 grid sm:grid-cols-1 md:grid-cols-2">
-          <div className="training-text text-start ">
+          <div className="training-text text-start xl:text-sm xxl:text-base">
             <h2 className="training-title pb-5">Training </h2>
             <p className="text-justify pb-5">
               New to Software-Defined Networking? Need to understand the
@@ -191,13 +194,13 @@ const About = ({ theme }) => {
           <div className="training-image flex justify-center">
             {theme === 'dark-theme' ? (
               <img
-                style={{ width: 700, height: 250 }}
+                className="training-icon"
                 src={training_dark}
                 alt="ODL Dark Logo"
               />
             ) : (
               <img
-                style={{ width: 700, height: 250 }}
+                className="training-icon"
                 src={training_light}
                 alt="ODL Light Logo"
               />
