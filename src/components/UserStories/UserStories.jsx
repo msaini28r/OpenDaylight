@@ -44,8 +44,7 @@ const UserStories = ({ theme }) => {
               <img className="mb-5 card-image" src={asd_icon} alt="" />
               <h3 className="mb-5">Automated Service Delivery</h3>
               <p className="mb-5">
-                We present you a proposal and Providing on-demand services that
-                may be controlled by the end userdiscuss niffty-gritty like
+                Open source SDN and automation to accelerate service delivery.
               </p>
               <a className="read-more" href="http://">
                 Read More
@@ -82,7 +81,7 @@ const UserStories = ({ theme }) => {
               <img className="mb-5 card-image" src={visibility_icon} alt="" />
               <h3 className="mb-5">Visibility and Control</h3>
               <p className="mb-5">
-                Centralized administration of the network and/or multiple
+                Centralized administration of the network and multiple
                 controllers. This is sometimes used as a precursor to NRO.
               </p>
               <a className="read-more" href="http://">

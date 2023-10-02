@@ -55,10 +55,11 @@ const AutomatedService = ({ theme }) => {
                   transformation catalyzed by SDN and NFV.
                 </p>
                 <p>
-                  Open source SDN enables the vendor- and hardware-independent
-                  network infrastructure essential towards overhauling the
-                  service delivery lifecycle. Automation of physical and virtual
-                  elements is essential to achieve time-to-market advantages.
+                  Open source SDN enables the vendor-independent and
+                  hardware-independent network infrastructure essential towards
+                  overhauling the service delivery lifecycle. Automation of
+                  physical and virtual elements is essential to achieve
+                  time-to-market advantages.
                 </p>
               </div>
             </div>
