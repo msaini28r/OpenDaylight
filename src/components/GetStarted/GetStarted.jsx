@@ -1,5 +1,5 @@
 import React from 'react'
-import './GettingStarted.css'
+import './GetStarted.css'
 import Casey from '../../images/Casey.png'
 import gmail from '../../images/gmail.png'
 import linkedin_2 from '../../images/linkedin_2.png'

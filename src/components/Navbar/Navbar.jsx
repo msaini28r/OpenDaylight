@@ -84,8 +84,8 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
                 </details>
               </li>
               <li>
-                <Link to="/getting-started" className={textColor}>
-                  Getting Started
+                <Link to="/get-started" className={textColor}>
+                  Get Started
                 </Link>
               </li>
             </ul>
@@ -157,8 +157,8 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
             </details>
           </li>
           <li>
-            <Link to="/getting-started" className={textColor}>
-              Getting Started
+            <Link to="/get-started" className={textColor}>
+              Get Started
             </Link>
           </li>
         </ul>
