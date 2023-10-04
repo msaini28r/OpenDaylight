@@ -27,7 +27,7 @@ const Homepage = ({ theme }) => {
   return (
     <div className="md:px-12 lg:px-0">
       {/* home-section */}
-      <div className="mx-auto home flex content-center gap-14 pt-16 xl:pb-44 xxl:pb-36 xl:mb-40 xxl:mb-44 xl:px-14 xxl:px-48 relative">
+      <div className="mx-auto home flex content-center gap-14 pt-16 xl:pb-36 xxl:pb-36 xl:mb-40 xxl:mb-44 xl:px-14 xxl:px-48 relative">
         <div className="home-text  pt-8 align-middle">
           <h1 className="home-title xl:text-6xl xxl:text-7xl uppercase">
             Automating <span>networks of any</span> size & scale.

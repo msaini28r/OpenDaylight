@@ -54,7 +54,7 @@
   width: 416px;
   height: 358px;
   flex-shrink: 0;
-  top: 1200px;
+  top: 1250px;
   left: 150px;
 }
 
@@ -116,6 +116,9 @@
     border-radius: 150px 0px 0px 0px;
     width: 1000px;
     height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .success-box {
@@ -125,28 +128,28 @@
     width: 416px;
     height: 320px;
     flex-shrink: 0;
-    top: 960px;
-    left: 50px;
+    position: relative;
+    top: -400px; /* Adjust this value as needed */
   }
 
   .asd-card {
     top: 700px;
-    left: 40%;
+    left: 45%;
   }
 
   .nro-card {
     top: 1140px;
-    left: 40%;
+    left: 45%;
   }
 
   .nfv-card {
     top: 650px;
-    left: 70%;
+    left: 72%;
   }
 
   .visibility-card {
     top: 1080px;
-    left: 70%;
+    left: 72%;
   }
 
   .card-image {

@@ -29,8 +29,8 @@ const UserStories = () => {
         </div>
       </div>
       {/* success section */}
-      <div className="container mx-auto success section my-16">
-        <div className="success-background py-32 flex justify-end ">
+      <div className="success section xl:pt-16 xxl:my-16">
+        <div className="success-background xxl:py-32 flex justify-end ">
           <div className="align-middle blue-box relative"></div>
         </div>
         <div className="success-box absolute align-middle py-28 px-14 ">
@@ -39,7 +39,7 @@ const UserStories = () => {
           </p>
         </div>
         <div className="success-cards ">
-          <div className="asd-card px-2 rounded-3xl border shadow-xl xl:w-80 xxl:w-1/5 absolute">
+          <div className="asd-card px-3 py-1 rounded-3xl border shadow-xl xl:w-80 xxl:w-1/5 absolute">
             <div className="flex flex-col items-center rounded-3xl text-center justify-center p-10">
               <img className="mb-5 card-image" src={asd_icon} alt="" />
               <h3 className="mb-5 xl:text-xl xxl:text-2xl">
