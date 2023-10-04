@@ -29,7 +29,7 @@ const UserStories = () => {
         </div>
       </div>
       {/* success section */}
-      <div className="success section my-16">
+      <div className="mx-auto success section my-16">
         <div className="success-background py-32 flex justify-end ">
           <div className="align-middle blue-box relative"></div>
         </div>

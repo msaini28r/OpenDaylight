@@ -54,7 +54,7 @@ const Homepage = ({ theme }) => {
       </div>
       <div className="container mx-auto">
         {/* stats-box */}
-        <div className="stats justify-around flex py-16 px-5 rounded-xl absolute">
+        <div className="mx-auto stats justify-around flex py-16 px-5 rounded-xl absolute">
           <div className="stats-box ">
             <img className="stats-icon" src={release} alt="" srcset="" />
             <h3 className="stats-text xl:text-xl xxl:text-2xl">
