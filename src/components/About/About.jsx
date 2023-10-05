@@ -10,14 +10,14 @@ import training_dark from '../../images/training_dark.png'
 const About = ({ theme }) => {
   return (
     <div>
-      <div className="unleash xl:p-8 xxl:p-16">
+      <div className="unleash sm:p-8 xl:p-8 xxl:p-16">
         <div className="unleash-banner container mx-auto text-center ">
-          <h1 className="unleash-banner unleash-title xl:text-4xl xxl:text-7xl uppercase py-7 font-extrabold">
+          <h1 className="unleash-banner unleash-title sm:text-3xl xl:text-4xl xxl:text-7xl uppercase py-7 font-extrabold">
             Unleash the power of
             <span className="unleash-banner block font-bold">OpenDaylight</span>
           </h1>
           <p
-            className="unleash-body xl:text-base xxl:text-2xl font-normal xl:px-56
+            className="unleash-body sm:text-sm xl:text-base xxl:text-2xl font-normal xl:px-56
            xxl:px-32 leading-7"
           >
             Founded in 2013, OpenDaylight is part of LF Networking (LFN), an
@@ -35,10 +35,12 @@ const About = ({ theme }) => {
           </p>
         </div>
       </div>
-      <div className="container mx-auto">
-        <div className="about py-16 grid sm:grid-cols-1 xl:grid-cols-2">
-          <div className="about-text text-start xl:text-sm xxl:text-base">
-            <h2 className="about-title pb-5">About OpenDaylight</h2>
+      <div className="container mx-auto sm:p-8 xl:p-0 xxl:p-0">
+        <div className="about sm:mb-4 xl:mb-0 xl:py-16 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+          <div className="about-text text-start sm:text-sm xl:text-sm xxl:text-base">
+            <h2 className="about-title lg:pb-6 sm:text-3xl xl:text-5xl">
+              About OpenDaylight
+            </h2>
             <p className="text-justify pb-5">
               Founded in 2013, OpenDaylight is part of LF Networking (LFN), an
               entity that integrates the governance of participating projects in
@@ -72,7 +74,7 @@ const About = ({ theme }) => {
               OpenDaylight as a developer.
             </p>
           </div>
-          <div className="about-image flex justify-center">
+          <div className=" about-image flex justify-center">
             {theme === 'dark-theme' ? (
               <img
                 className="about-icon"
@@ -88,16 +90,18 @@ const About = ({ theme }) => {
             )}
           </div>
         </div>
-        <div className="sdn py-16 grid sm:grid-cols-1 md:grid-cols-2">
-          <div className="sdn-image">
+        <div className="sdn sm:py-6 xl:py-16 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 xxl:grid-cols-2">
+          <div className="sdn-image sm:mb-12 xl:my-0">
             {theme === 'dark-theme' ? (
               <img className="sdn-icon" src={sdn_dark} alt="ODL Dark Logo" />
             ) : (
               <img className="sdn-icon" src={sdn_light} alt="ODL Light Logo" />
             )}
           </div>
-          <div className="sdn-text text-start xl:text-sm xxl:text-base">
-            <h2 className="sdn-title pb-5">What is SDN?</h2>
+          <div className="sdn-text text-start sm:text-sm xl:text-sm xxl:text-base">
+            <h2 className="sdn-title pb-5 sm:text-3xl xl:text-5xl mb-3">
+              What is SDN?
+            </h2>
             <p className="text-justify pb-5">
               The modern software-defined networking (SDN) movement grew out of
               a simple question: why shouldn’t networking devices be
@@ -149,9 +153,11 @@ const About = ({ theme }) => {
             </p>
           </div>
         </div>
-        <div className="training py-16 grid sm:grid-cols-1 md:grid-cols-2">
-          <div className="training-text text-start xl:text-sm xxl:text-base">
-            <h2 className="training-title pb-5">Training </h2>
+        <div className="training sm:mb-4 xl:mb-0 xl:py-16 grid sm:grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="training-text text-start sm:text-sm xl:text-sm xxl:text-base">
+            <h2 className="training-title pb-5 sm:text-3xl xl:text-5xl">
+              Training{' '}
+            </h2>
             <p className="text-justify pb-5">
               New to Software-Defined Networking? Need to understand the
               specifics of OpenDaylight?

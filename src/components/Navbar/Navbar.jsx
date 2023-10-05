@@ -11,10 +11,10 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
   const textColor = theme === 'dark' ? 'text-white' : 'text-black'
 
   return (
-    <div className=" container mx-auto navbar bg-base-100 justify-between py-5">
+    <div className=" container mx-auto navbar bg-base-100 justify-between py-5 sm:px-4 xl:px-0">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost xl:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -109,7 +109,7 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
           </Link>
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex ml-56">
+      <div className="navbar-center hidden xl:flex ml-56">
         <ul className="menu menu-horizontal">
           <li>
             <Link to="/about" className={textColor}>

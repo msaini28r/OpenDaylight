@@ -8,7 +8,7 @@ const Footer = ({ theme }) => {
   return (
     <div>
       <hr />
-      <div className="container sm:p-12 lg:p-0 test mx-auto">
+      <div className="container sm:px-10 xl:px-0 test mx-auto">
         <div className="footer">
           <div className="footer-content">
             <div className="pb-3">

@@ -25,7 +25,8 @@
   text-decoration: underline;
 }
 
-.light-theme .lfn-link {
+.light-theme .lfn-link,
+.light-theme .link {
   color: #2539ed;
   font-weight: 500;
   text-decoration: underline;
@@ -40,8 +41,8 @@
 }
 
 .about-icon {
-  width: 500px;
-  height: 550px;
+  width: 400px;
+  height: 500px;
 }
 
 .sdn-icon {
@@ -78,5 +79,64 @@
   .training-icon {
     width: 600px;
     height: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .about-image,
+  .sdn-image,
+  .training-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-icon {
+    width: 360px;
+    height: 480px;
+  }
+
+  .sdn-icon {
+    width: 450px;
+    height: 450px;
+  }
+
+  .training-icon {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 768px) {
+  .about,
+  .training {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-icon {
+    width: 250px;
+    height: 320px;
+    margin: 40px 0;
+  }
+
+  .sdn-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sdn-icon {
+    width: 280px;
+    height: 280px;
+  }
+
+  .training-image {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .training-icon {
+    width: 300px;
+    height: 150px;
+    margin: 40px 0;
   }
 }
