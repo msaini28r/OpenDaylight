@@ -53,9 +53,9 @@ const personality = [
   {
     image: Casey,
     name: 'Casey Cain',
-    designation: 'Sr. Technical Community Architect ',
+    designation: 'Technical Community Architect ',
     description:
-      'Experienced software engineer with expertise in web development.',
+      'Casey Cain works on community development and all aspects of release management.',
     company: 'The Linux Foundation',
     linkedin: 'https://www.linkedin.com/in/caseycain1/',
     gmail: 'ccain@linuxfoundation.org',
@@ -63,17 +63,19 @@ const personality = [
   {
     image: Casey,
     name: 'Jill Lovato',
-    designation: 'Marketing, Communication Director',
-    description: 'Passionate designer with a keen eye for user-centric design.',
+    designation: 'Marketing Director',
+    description:
+      'Jill leads communications, public relations and analyst relations for the LF Networking and LF Edge.',
     company: 'The Linux Foundation',
     linkedin: 'https://www.linkedin.com/in/jilllovato/',
     gmail: 'jlovato@linuxfoundation.org',
   },
   {
     image: Casey,
-    name: 'Venkatrangan Govindaragan',
+    name: 'Venkatrangan',
     designation: 'TSC Chair, OpenDaylight',
-    description: 'Passionate designer with a keen eye for user-centric design.',
+    description:
+      'Venkatrangan Govindaragan is the offical TSC chair for the OpenDaylight Community.',
     company: 'Nvidia',
     linkedin:
       'https://www.linkedin.com/in/venkatrangan-govindarajan-sdn-test-automation/',
@@ -85,12 +87,12 @@ const GettingStarted = () => {
   return (
     <div>
       <div className="started-banner mb-20">
-        <div className="started-box container mx-auto text-center xl:p-10 xxl:p-20">
-          <div>
-            <h1 className="started-title xl:pb-6 xxl:pb-9 xl:text-5xl xxl:text-7xl">
+        <div className="started-box container mx-auto text-center sm:p-9 xl:p-10 xxl:p-20">
+          <div className="started-box">
+            <h1 className="started-title sm:pb-4 xl:pb-6 xxl:pb-9 xl:text-5xl xxl:text-7xl">
               Get <span className="started-span">Started</span>
             </h1>
-            <p className="started-body xl:px-44 xxl:px-48 text-center xl:text-lg xxl:text-2xl mb-9">
+            <p className="started-body sm:px-0 xl:px-44 xxl:px-48 text-center xl:text-lg xxl:text-2xl mb-9">
               Whether you’re a user, an engineer working for a solution
               provider, or an independent developer with a personal interest in
               open networking, there’s no better way to help drive forward the
@@ -102,7 +104,7 @@ const GettingStarted = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="download-button mr-10 py-2.5 px-6 text-base"
+              className="download-button sm:mr-2 lg:mr-10 py-2.5 px-6 text-base"
               href="https://docs.opendaylight.org/en/stable-chlorine/downloads.html"
             >
               Download
@@ -118,22 +120,22 @@ const GettingStarted = () => {
           </div>
         </div>
       </div>
-      <div className="resources container mx-auto mb-20">
+      <div className="resources container mx-auto sm:p-6 lg:px-5 xl:p-0 mb-20">
         <div className="resources-title">
           <h2 className="text-center mb-20">Resources</h2>
         </div>
-        <div className="resources-cards grid sm:grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="resources-cards grid sm:grid-cols-1 gap-10 lg:grid-cols-3">
           {/* Using map so that new card automatically get's created when new resources is added. */}
           {resources.map((resources, index) => (
             <div
               key={index}
               className="cards-box px-2 rounded-lg shadow-xl w-11/12"
             >
-              <div className="cards my-4 pl-4 pt-5">
-                <h2 className="cards xl:text-2xl xxl:text-3xl font-semibold mb-5">
+              <div className="cards my-4 pl-4 sm:pt-1 lg:pt-5">
+                <h2 className="cards sm:text-2xl xl:text-2xl xxl:text-3xl font-semibold sm:mb-3 lg:mb-5">
                   {resources.heading}
                 </h2>
-                <p className="mb-5 w-11/12 xl:text-base xxl:text-base">
+                <p className="sm:mb-3 lg:mb-5 w-11/12 sm:text-sm xl:text-base xxl:text-base">
                   {resources.description}
                 </p>
                 <a
@@ -149,29 +151,32 @@ const GettingStarted = () => {
           ))}
         </div>
       </div>
-      <div className="container mx-auto media-personality mb-20">
-        <div className="resources-title mb-20">
-          <h2 className="text-center xl:text-3xl xxl:text-4xl xl:mb-7 xxl:mb-10">
+      <div className="container mx-auto media-personality mb-20 sm:p-6 lg:p-0 lg:px-6 xl:px-0">
+        <div className="resources-title sm:mb-10 lg:mb-20">
+          <h2 className="text-center xl:text-3xl xxl:text-4xl sm:mb-6 xl:mb-7 xxl:mb-10">
             Key Contacts
           </h2>
-          <p className="text-center xl:text-xl xxl:text-2xl">
-            Need help related to something? Reach out to us.
+          <p className="text-center  xl:text-xl xxl:text-2xl">
+            Need help related to something?{' '}
+            <span className="reach-out  sm:block lg:inline">
+              Reach out to us.
+            </span>
           </p>
         </div>
-        <div className="personility grid sm:grid-cols-1 md:grid-cols-3 xl:gap-2 xxl:gap-9">
+        <div className="personility grid sm:grid-cols-1 md:grid-cols-3 sm:gap-8 lg:gap-4 xl:gap-2 xxl:gap-9 sm:px-4 xl:px-0">
           {personality.map((personality, index) => (
             <div className="media-card border xl:w-11/12 xxl:w-10/12 rounded-xl p-4">
-              <div className="image flex justify-center mb-6">
+              <div className="personality-image flex justify-center mb-6">
                 <img className="rounded-xl" src={personality.image} alt="" />
               </div>
-              <div className="card-info xl:mb-4 xxl:mb-5">
+              <div className="card-info sm:mb-4 xl:mb-4 xxl:mb-5">
                 <h4 className="mb-3 xl:text-lg xxl:text-xl">
                   {personality.name}
                 </h4>
                 <p className="text-normal font-semibold mb-3">
                   {personality.designation}
                 </p>
-                <p className="xl:text-sm xxl:text-base w-11/12">
+                <p className="xl:text-sm xxl:text-base sm:w-100 xl:w-11/12">
                   {personality.description}
                 </p>
               </div>
@@ -179,7 +184,7 @@ const GettingStarted = () => {
                 <div>
                   <p className="company-name">{personality.company}</p>
                 </div>
-                <div className="flex xl:space-x-3 xxl:space-x-5">
+                <div className="flex sm:space-x-5 xl:space-x-3 xxl:space-x-5">
                   <a
                     href={`mailto:${personality.gmail}`}
                     target="_blank"

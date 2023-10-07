@@ -1,4 +1,4 @@
-.light-theme .started-banner,
+s.light-theme .started-banner,
 .light-theme .started-box,
 .light-theme .started-title,
 .light-theme .started-body,
@@ -16,6 +16,10 @@
 .dark-theme .buttons {
   background-color: #79858d;
   color: #f1f1f1;
+}
+
+.dark-theme .reach-out {
+  color: #c3c3c3;
 }
 
 .download-button {
@@ -37,4 +41,13 @@
 .dark-theme .name,
 .dark-theme .company-name {
   color: #ff7426;
+}
+
+@media screen and (min-width: 390px) and (max-width: 768px) {
+  .resources-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
