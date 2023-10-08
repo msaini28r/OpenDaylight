@@ -19,10 +19,10 @@ const NetworkResource = ({ theme }) => {
         <h1 className="banner-text">Network Resources Optimization</h1>
         <img className="banner-image" src={banner_dark} alt="" />
       </div>
-      <div className="container mx-auto lg:px-5">
-        <div className="box sm:px-12 lg:px-0">
-          <div className="row pt-16 flex">
-            <div className="column pt-2">
+      <div className="container mx-auto">
+        <div className="box sm:px-8 lg:px-10 xl:px-0">
+          <div className="row sm:pt-10 lg:pt-16 flex">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img
                   src={search_dark}
@@ -37,9 +37,9 @@ const NetworkResource = ({ theme }) => {
                 />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Overview</h2>
-              <div className="overview-text text-justify">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">Overview</h2>
+              <div className="overview-text text-justify sm:text-sm xl:text-base">
                 <p className="pb-3">
                   Network infrastructure is being significantly challenged by a
                   strong traffic growth driven by mobile computing, streaming
@@ -62,17 +62,17 @@ const NetworkResource = ({ theme }) => {
               </div>
             </div>
           </div>
-          <div className="row pt-16 flex">
-            <div className="column pt-2">
+          <div className="row sm:pt-10 lg:pt-16 flex">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={maze_dark} alt="Maze Logo" style={{ width: 310 }} />
               ) : (
                 <img src={maze_light} alt="Maze Logo" style={{ width: 310 }} />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Challenges</h2>
-              <div className="text-justify">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">Challenges</h2>
+              <div className="text-justify sm:text-sm xl:text-base">
                 <p className="pb-3">
                   Improving and ultimately optimizing network performance
                   remains an ever-present challenge for networking. No matter
@@ -124,17 +124,19 @@ const NetworkResource = ({ theme }) => {
               </div>
             </div>
           </div>
-          <div className="row pt-16 flex">
-            <div className="column pt-2">
+          <div className="row sm:pt-10 lg:pt-16 flex">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={odl_dark} alt="odl Logo" style={{ width: 380 }} />
               ) : (
                 <img src={odl_light} alt="odl Logo" style={{ width: 380 }} />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Why Opendaylight?</h2>
-              <div className="text-justify">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">
+                Why Opendaylight?
+              </h2>
+              <div className="text-justify sm:text-sm xl:text-base">
                 <p className="pb-3">
                   By maintaining network topology and configuration along with
                   fault and performance state, OpenDaylight provides a rich set
@@ -190,8 +192,8 @@ const NetworkResource = ({ theme }) => {
               </div>
             </div>
           </div>
-          <div className="row py-16 flex">
-            <div className="column pt-2">
+          <div className="row sm:pb-10 lg:py-16 flex">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={quote_dark} alt="quote Logo" style={{ width: 220 }} />
               ) : (
@@ -202,13 +204,17 @@ const NetworkResource = ({ theme }) => {
                 />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="py-10">Examples | End Users</h2>
-              <div className="grid  ">
-                <div className="nro-boxes mx-auto flex mb-8">
-                  <div className="w-1/2 text-justify align-middle">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl sm:py-5 lg:py-10">
+                Examples | End Users
+              </h2>
+              <div className="">
+                <div className="nro-boxes mx-auto flex mb-8 justify-between">
+                  <div className="column lg:w-1/2 text-justify sm:text-sm xl:text-base align-middle">
                     <div className="column pb-6">
-                      <h3>Tencent Data Center Interconnect (DCI)</h3>
+                      <h3 className="font-semibold sm:mb-3 lg:mb-0">
+                        Tencent Data Center Interconnect (DCI)
+                      </h3>
                       <p>
                         As a leading provider of Internet services in China,
                         Tencent operates in a highly competitive consumer space
@@ -218,7 +224,7 @@ const NetworkResource = ({ theme }) => {
                         service delivery among its vast data centers.
                       </p>
                     </div>
-                    <div className="column">
+                    <div className="column sm:mb-3 lg:mb-0">
                       <h3 className="text-2xl font-semibold pb-2">
                         China Mobile Novonet
                       </h3>
@@ -232,22 +238,22 @@ const NetworkResource = ({ theme }) => {
                       </p>
                     </div>
                   </div>
-                  <div className="column w-1/2 flex justify-center align-top">
+                  <div className="column lg:w-1/2 flex justify-center align-middle">
                     <img
                       src={cm_usecase_1}
-                      style={{ width: 400 }}
+                      className="usecase-image"
                       alt=""
                       srcset=""
                     />
                   </div>
                 </div>
-                <div className="nro-boxes mx-auto flex mb-8">
-                  <div className="w-1/2 text-justify align-middle">
+                <div className="nro-boxes mx-auto flex mb-8 lg:justify-between xl:justify-between">
+                  <div className="column lg:w-1/2 text-clip sm:text-sm xl:text-base align-middle">
                     <div className="column pb-6">
-                      <h3 className="pb-6">
+                      <h3 className="pb-6 text-clip font-semibold">
                         Multi-Layer Transport Controller Solutions
                       </h3>
-                      <p>
+                      <p className="text-justify">
                         One of the key SDN use cases for the telecommunications
                         industry is Transport-SDN, which is focused on
                         controlling the packet-optical infrastructure for Metro
@@ -256,11 +262,11 @@ const NetworkResource = ({ theme }) => {
                         OpenDaylight to control the multi-layer infrastructure.
                       </p>
                     </div>
-                    <div className="column">
+                    <div className="column sm:mb-3 lg:mb-0">
                       <h3 className="text-2xl font-semibold pb-2">
                         Ericsson SDN Controller
                       </h3>
-                      <p>
+                      <p className="text-justify">
                         Ericsson’s Transport SDN product offers an end to end
                         abstracted view of network resources and topology,
                         optimizing resource allocation and network engineering
@@ -268,19 +274,14 @@ const NetworkResource = ({ theme }) => {
                       </p>
                     </div>
                   </div>
-                  <div className="column w-1/2 flex justify-center align-top">
-                    <img
-                      src={ericsson_sdn}
-                      style={{ width: 500 }}
-                      alt=""
-                      srcset=""
-                    />
+                  <div className="column lg:w-1/2 ericsson-image flex justify-start align-middle">
+                    <img src={ericsson_sdn} alt="" srcset="" />
                   </div>
                 </div>
                 <div className="nro-boxes mx-auto flex">
-                  <div className=" text-justify align-middle">
+                  <div className="column text-justify sm:text-sm xl:text-base align-middle">
                     <div className="column pb-6">
-                      <h3 className="pb-6">
+                      <h3 className="pb-6 font-semibold">
                         Fujitsu Virtuora® NC Network Control and Management
                         Platform
                       </h3>

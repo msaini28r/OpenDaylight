@@ -146,20 +146,36 @@ h4 {
   transition: 0.3s;
 }
 
-@media screen and (min-width: 390px) and (max-width: 1024px) {
+/*laptop*/
+@media screen and (min-width: 1280px) and (max-width: 1536px) {
   .banner-text {
-    padding-left: 50px;
+    padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 768px) {
+  .banner {
+    display: flex;
+    align-items: center;
+    background-color: #79858d;
+    justify-content: space-between;
+  }
+
+  .banner-text {
+    padding-left: 40px;
+    font-size: 20px;
   }
 
   .banner-image {
-    width: 460px;
+    width: 180px;
+    height: 150px;
   }
   .footer-text {
     width: 240px;
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1536px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .banner-text {
     padding-left: 50px;
   }

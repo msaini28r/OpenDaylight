@@ -58,7 +58,7 @@ const Footer = ({ theme }) => {
       </div>
       <div className="copyright">
         <hr />
-        <p>
+        <p className="sm:text-xs lg:text-base py-2">
           Copyright © 2023 OpenDaylight Project © 2023 The Linux Foundation®.
           All rights reserved.
         </p>
