@@ -14,15 +14,14 @@ import icon_5 from '../../images/Icon_5.png'
 import icon_6 from '../../images/Icon_6.png'
 
 const Homepage = ({ theme }) => {
-  const [email, setEmail] = useState('')
+  const [isChecked, setIsChecked] = useState(false)
 
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    console.log(`Submitted email: ${email}`)
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked)
   }
 
-  const handleChange = (event) => {
-    setEmail(event.target.value)
+  const handleSubmit = (e) => {
+    e.preventDefault()
   }
   return (
     <div className="md:px-12 lg:px-0">
@@ -147,37 +146,6 @@ const Homepage = ({ theme }) => {
           </div>
         </div>
       </div>
-      {/*Email Form*/}
-      <div className="email py-16">
-        <div className="container mx-auto  grid grid-rows-1 grid-cols-2 email-box text-center ">
-          <div
-            className="email-text flex flex-col pl-28 items-start justify-center"
-            style={{ borderRadius: 65 }}
-          >
-            <h2 className="content">Subscribe Newsletter</h2>
-            <p className="content">
-              Follow OpenDaylight News in the Networking Newsletter
-            </p>
-          </div>
-          <div className="email-submit flex items-center align-bottom py-24 pl-8">
-            <form className="input-box" onSubmit={handleSubmit}>
-              <label className="input-content">
-                <input
-                  className="mx-3 input"
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={handleChange}
-                  style={{ width: 250 }}
-                />
-              </label>
-              <button className="submit-button ml-3" type="submit">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
       <div className="community flex flex-col justify-center items-center py-12 align-bottom">
         <h3 className="community-text bg-color mt-10">
           OpenDaylight would like to thank the following project for supporting
@@ -190,6 +158,73 @@ const Homepage = ({ theme }) => {
           alt=""
           srcset=""
         />
+      </div>
+      {/*Email Form*/}
+      <div className="email-form py-16 px-80">
+        <div className="container mx-auto  ">
+          <h3 className="email-heading text-center mb-8">
+            Stay Connected with the LF Networking Newsletter
+          </h3>
+          <div className="email-inputs">
+            <form onSubmit={handleSubmit}>
+              <div className="first-name mb-7">
+                <h5 className="mb-2">First Name*</h5>
+                <input
+                  className="input-box"
+                  type="text"
+                  placeholder="First Name"
+                  required // Make the input required
+                />
+              </div>
+              <div className="last-name mb-7">
+                <h5 className="mb-2">Last Name*</h5>
+                <input
+                  className="input-box"
+                  type="text"
+                  placeholder="Last Name"
+                  required // Make the input required
+                />
+              </div>
+              <div className="last-name mb-7">
+                <h5 className="mb-2">Company Email*</h5>
+                <input
+                  className="input-box"
+                  type="text"
+                  placeholder="Company Email"
+                  required // Make the input required
+                />
+              </div>
+              <div className="email-text ml-1 mb-7 ">
+                <div className="flex items-start">
+                  <input
+                    type="checkbox"
+                    className="form-checkbox h-5 w-5 mt-1 text-indigo-600"
+                    checked={isChecked}
+                    onChange={handleCheckboxChange}
+                  />
+                  <label className="ml-2 email-text">
+                    In addition, I would like to receive marketing emails about
+                    news, events, and training from The Linux Foundation and its
+                    Projects. I understand that I can unsubscribe at any time.
+                    <p className="mt-2">
+                      By submitting this form, I acknowledge that my information
+                      is subject to The Linux Foundation's Privacy Policy.
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div className="email-buttons text-center">
+                <button
+                  className="learn-button rounded-full uppercase"
+                  type="submit" // Specify the button type as "submit" to trigger form submission
+                  href="https://www.opendaylight.org/"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -12,7 +12,9 @@
 .light-theme .stats,
 .light-theme .stats-text,
 .light-theme .stats-icon,
-.light-theme .email {
+.light-theme .community,
+.light-theme .community-text,
+.light-theme .community-image {
   background-color: #2f4858;
   color: white;
 }
@@ -36,16 +38,6 @@
   background-color: #79858d;
 }
 
-.dark-theme .email-box,
-.dark-theme .email-text,
-.dark-theme .content,
-.dark-theme .input-box,
-.dark-theme .input-content,
-.dark-theme .input {
-  background-color: #fcf9f6;
-  color: #212121;
-}
-
 .learn-button {
   background: var(
     --Yellow-Orange-Gradient,
@@ -57,6 +49,14 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
+}
+
+.dark-theme .email-text {
+  color: #c3c3c3;
+}
+
+.light-theme .email-text {
+  color: #212121;
 }
 
 .map {
@@ -95,37 +95,19 @@
   margin: 20px 0px;
 }
 
-.email-box {
-  border-radius: 75px;
-}
-
 .input-box {
-  border-radius: 60px;
-  border: 1px solid #fcf9f6;
+  border-radius: 10px;
+  border: 0.5px solid #959292;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
   background: #fff;
-  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.25);
-  width: 448px;
-  height: 77px;
+  width: 100%;
+  height: 50px;
   flex-shrink: 0;
+  color: #212121;
+  padding-left: 10px;
 }
 
-.submit-button {
-  background-color: #2f4858;
-  color: white;
-  padding: 20px 40px;
-  border-radius: 60px;
-  width: 160px;
-  height: 75px;
-}
-
-.email-submit {
-  background: var(
-    --Yellow-Orange-Gradient,
-    linear-gradient(180deg, #fcb813 0%, #f48120 100%)
-  );
-  border-radius: 300px 160px 160px 300px;
-}
-
+/* Laptop view */
 @media screen and (min-width: 1280px) and (max-width: 1536px) {
   .map {
     width: 1600px;
