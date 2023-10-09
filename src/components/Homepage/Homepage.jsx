@@ -189,7 +189,7 @@ const Homepage = ({ theme }) => {
                 <h5 className="mb-2">Company Email*</h5>
                 <input
                   className="input-box"
-                  type="text"
+                  type="email"
                   placeholder="Company Email"
                   required // Make the input required
                 />
