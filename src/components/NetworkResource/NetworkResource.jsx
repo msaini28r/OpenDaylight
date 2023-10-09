@@ -20,7 +20,7 @@ const NetworkResource = ({ theme }) => {
         <img className="banner-image" src={banner_dark} alt="" />
       </div>
       <div className="container mx-auto">
-        <div className="box sm:px-8 lg:px-10 xl:px-0">
+        <div className="box sm:px-8 lg:px-10 xl:px-5 xxl:px-0">
           <div className="row sm:pt-10 lg:pt-16 flex">
             <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (

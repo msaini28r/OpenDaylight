@@ -16,9 +16,9 @@ const CloudNvf = ({ theme }) => {
         <img className="banner-image" src={banner_dark} alt="" />
       </div>
       <div className="container mx-auto">
-        <div className="box sm:px-12 lg:px-0">
+        <div className="box sm:px-8 lg:px-10 xl:px-5 xxl:px-0">
           <div className="row pt-16 flex">
-            <div className="column pt-2">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img
                   src={search_dark}
@@ -33,9 +33,9 @@ const CloudNvf = ({ theme }) => {
                 />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Overview</h2>
-              <div className="overview-text text-justify">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">Overview</h2>
+              <div className="overview-text text-justify sm:text-sm xl:text-base">
                 <p className="pb-3">
                   In recent years, Enterprise and SMBs have embraced Cloud
                   technology as a critical tool to enhance their
@@ -83,16 +83,16 @@ const CloudNvf = ({ theme }) => {
             </div>
           </div>
           <div className="row pt-16 flex">
-            <div className="column pt-2">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={maze_dark} alt="Maze Logo" style={{ width: 400 }} />
               ) : (
                 <img src={maze_light} alt="Maze Logo" style={{ width: 400 }} />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Challenges</h2>
-              <div className="text-justify">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">Challenges</h2>
+              <div className="text-justify sm:text-sm xl:text-base">
                 <p className="pb-3">
                   For all its promise, migration to virtualized networks is not
                   without obstacles. The new network must accommodate an
@@ -162,16 +162,18 @@ const CloudNvf = ({ theme }) => {
             </div>
           </div>
           <div className="row pt-16 flex">
-            <div className="column pt-2">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={odl_dark} alt="odl Logo" style={{ width: 320 }} />
               ) : (
                 <img src={odl_light} alt="odl Logo" style={{ width: 320 }} />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Why Opendaylight?</h2>
-              <div className="text-justify">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">
+                Why Opendaylight?
+              </h2>
+              <div className="text-justify sm:text-sm xl:text-base">
                 <p className="pb-3">
                   OpenDaylight is an open source framework for migrating to an
                   SDN network architecture. It has been deployed in data

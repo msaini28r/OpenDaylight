@@ -17,9 +17,9 @@ const AutomatedService = ({ theme }) => {
         <img className="banner-image" src={banner_dark} alt="" />
       </div>
       <div className="container mx-auto">
-        <div className="box sm:px-12 lg:px-0">
+        <div className="box sm:px-8 lg:px-10 xl:px-5 xxl:px-0">
           <div className="row pt-16 flex">
-            <div className="column pt-2">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img
                   src={search_dark}
@@ -34,9 +34,9 @@ const AutomatedService = ({ theme }) => {
                 />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Overview</h2>
-              <div className="overview-text text-justify">
+            <div className="column sm:pl-0 lg:pl-12 ">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">Overview</h2>
+              <div className="overview-text text-justify sm:text-sm xl:text-base">
                 <p className="pb-3">
                   Telecom and over-the-top (OTT) content providers as well as
                   mainstream enterprises are under increasing competitive
@@ -65,16 +65,16 @@ const AutomatedService = ({ theme }) => {
             </div>
           </div>
           <div className="row pt-16 flex">
-            <div className="column pt-2">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={maze_dark} alt="Maze Logo" style={{ width: 300 }} />
               ) : (
                 <img src={maze_light} alt="Maze Logo" style={{ width: 300 }} />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Challenges</h2>
-              <div className="text-justify">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">Challenges</h2>
+              <div className="text-justify sm:text-sm xl:text-base">
                 <p className="pb-1">
                   Most large organizations have large investments in existing
                   hardware from multiple vendors, customized back-end systems
@@ -89,16 +89,18 @@ const AutomatedService = ({ theme }) => {
             </div>
           </div>
           <div className="row pt-16 flex">
-            <div className="column pt-2">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={odl_dark} alt="odl Logo" style={{ width: 150 }} />
               ) : (
                 <img src={odl_light} alt="odl Logo" style={{ width: 150 }} />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Why Opendaylight?</h2>
-              <div className="text-justify">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">
+                Why Opendaylight?
+              </h2>
+              <div className="text-justify sm:text-sm xl:text-base">
                 <p className="pb-3">
                   OpenDaylight, through its broad commercial ecosystem, offers a
                   flexible and open SDN platform to enable automated service
@@ -143,7 +145,7 @@ const AutomatedService = ({ theme }) => {
             </div>
           </div>
           <div className="row py-16 flex">
-            <div className="column pt-2">
+            <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={quote_dark} alt="quote Logo" style={{ width: 100 }} />
               ) : (
@@ -154,9 +156,9 @@ const AutomatedService = ({ theme }) => {
                 />
               )}
             </div>
-            <div className="column pl-12">
-              <h2 className="pb-3">Examples</h2>
-              <div className="text-justify">
+            <div className="column sm:pl-0 lg:pl-12">
+              <h2 className="sm:text-3xl lg:text-4xl pb-3">Examples</h2>
+              <div className="text-justify sm:text-sm xl:text-base">
                 <p className="pb-1">
                   Major global operators have deployed OpenDaylight to automate
                   service delivery to improve agility, increase new revenues,

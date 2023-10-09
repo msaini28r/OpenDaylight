@@ -72,9 +72,6 @@
     flex-direction: column;
     align-items: center;
   }
-  .content-image {
-    display: none;
-  }
 
   .usecase-image {
     width: 300px;
