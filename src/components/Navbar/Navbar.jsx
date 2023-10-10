@@ -164,7 +164,7 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
         </ul>
       </div>
       <div className="navbar-center ">
-        <button>
+        <button className="lg:mr-4 xl:mr-0">
           <svg
             style={{
               width: 30,

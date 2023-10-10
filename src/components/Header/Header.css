@@ -43,7 +43,7 @@
 }
 
 /*Tablet view*/
-@media screen and (min-width: 390px) and (max-width: 1024px) {
+@media screen and (min-width: 375px) and (max-width: 1024px) {
   .nav-link {
     display: none;
     flex-direction: column;

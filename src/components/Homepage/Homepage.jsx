@@ -24,14 +24,14 @@ const Homepage = ({ theme }) => {
     e.preventDefault()
   }
   return (
-    <div className="md:px-12 lg:px-0">
+    <div className=" md:px-12 lg:px-0">
       {/* home-section */}
-      <div className="mx-auto home flex content-center gap-14 pt-16 xl:pb-36 xxl:pb-36 xl:mb-40 xxl:mb-44 xl:px-14 xxl:px-48 relative">
-        <div className="home-text  pt-8 align-middle">
-          <h1 className="home-title xl:text-6xl xxl:text-7xl uppercase">
+      <div className="mx-auto home lg:flex content-center gap-14 sm:py-12 xl:pt-16 lg:pb-20 xl:pb-36 xxl:pb-36 lg:mb-4 xl:mb-40 xxl:mb-44 sm:px-8 lg:px-10 xl:px-14 xxl:px-48 relative">
+        <div className="home-text lg:pt-2 xl:pt-8 align-middle">
+          <h1 className="home-title sm:text-3xl lg:text-4xl xl:text-6xl xxl:text-7xl uppercase">
             Automating <span>networks of any</span> size & scale.
           </h1>
-          <p className="home-text font-normal xl:text-xl xxl:text-3xl text-justify py-6 pr-4">
+          <p className="home-text font-normal sm:text-base xl:text-xl xxl:text-3xl text-justify py-6 lg:pr-4">
             The OpenDaylight project is an open source platform for Software
             Defined Networking (SDN) that uses open protocols to provide
             centralized, programmatic control and network device monitoring.
@@ -43,7 +43,7 @@ const Homepage = ({ theme }) => {
             Learn More
           </button>
         </div>
-        <div className="img-box mx-auto">
+        <div className="hidden lg:block img-box mx-auto">
           {theme === 'dark-theme' ? (
             <img className="map" src={map_dark} alt="ODL Dark Logo" />
           ) : (
@@ -51,24 +51,25 @@ const Homepage = ({ theme }) => {
           )}
         </div>
       </div>
-      <div className="container mx-auto">
+      <hr className="lg:hidden" />
+      <div className="container mx-auto sm:px-8 md:px-0">
         {/* stats-box */}
-        <div className="container mx-auto stats justify-around flex py-16 px-5 rounded-xl absolute">
+        <div className="container mx-auto stats justify-between flex lg:py-8 xl:py-16 px-5 rounded-xl absolute sm:hidden lg:flex">
           <div className="stats-box ">
             <img className="stats-icon" src={release} alt="" srcset="" />
-            <h3 className="stats-text xl:text-xl xxl:text-2xl">
+            <h3 className="stats-text lg:text-base xl:text-xl xxl:text-2xl">
               Release: 18 Argon
             </h3>
           </div>
           <div className="stats-box">
             <img className="stats-icon" src={commits} alt="" srcset="" />
-            <h3 className="stats-text xl:text-xl xxl:text-2xl">
+            <h3 className="stats-text lg:text-base xl:text-xl xxl:text-2xl">
               Total Commits: 2.6K+
             </h3>
           </div>
           <div className="stats-box">
             <img className="stats-icon" src={committers} alt="" srcset="" />
-            <h3 className="stats-text xl:text-xl xxl:text-2xl">
+            <h3 className="stats-text lg:text-base xl:text-xl xxl:text-2xl">
               Committers: 45
             </h3>
           </div>
@@ -76,14 +77,16 @@ const Homepage = ({ theme }) => {
         {/* why opendaylight/functionality section */}
         <div className="function text-justify xl:my-4 xxl:my-12">
           <h2 className="function-text ">
-            <center className="my-28">Why Opendaylight?</center>
+            <center className="sm:my-10 lg:mt-24 xl:my-28 sm:text-3xl xl:text-4xl">
+              Why Opendaylight?
+            </center>
           </h2>
-          <div className="grid grid-rows-2 ">
-            <div className="functionality-row grid md:grid-cols-2 lg:grid-cols-3 xl:gap-14 xxl:gap-16 mb-16">
+          <div className="grid sm:grid-rows-1 lg:grid-rows-2 sm:py-10 xl:py-0 lg:px-10">
+            <div className="functionality-row grid sm:grid-cols-1 lg:grid-cols-3 sm:gap-16 xl:gap-14 xxl:gap-16 mb-16">
               <div className="flexibility">
-                <img src={icon_1} alt="" className="mb-5" />
+                <img src={icon_1} alt="" className="functionality-image mb-5" />
                 <h3>1. Flexibilty</h3>
-                <p className="functionality-body xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight offers a flexible and modular architecture,
                   allowing users to customize its capabilities to suit their
                   specific networking needs, making it a cost-effective choice
@@ -91,9 +94,9 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
               <div className="Open Source">
-                <img src={icon_2} alt="" className="mb-5" />
+                <img src={icon_2} alt="" className="functionality-image mb-5" />
                 <h3>2. Open Source</h3>
-                <p className="functionality-body xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   Being an open-source platform, OpenDaylight fosters
                   collaboration and innovation among a diverse community of
                   developers, resulting in frequent updates, bug fixes, and new
@@ -101,9 +104,9 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
               <div className="Vendor Neutrality">
-                <img src={icon_3} alt="" className="mb-5" />
+                <img src={icon_3} alt="" className="functionality-image mb-5" />
                 <h3>3. Vendor Neutrality</h3>
-                <p className="functionality-body xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight is vendor-agnostic, supporting diverse networking
                   devices and technologies, enabling users to avoid vendor
                   lock-in and choose optimal solutions for their network
@@ -111,11 +114,11 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
             </div>
-            <div className="functionality-row grid md:grid-cols-2 lg:grid-cols-3 gap-16">
+            <div className="functionality-row grid sm:grid-cols-1 lg:grid-cols-3 gap-16">
               <div className=" Comprehensive Feature">
-                <img src={icon_4} alt="" className="mb-5" />
-                <h3>4. Comprehensive Feature</h3>
-                <p className="functionality-body xl:text-sm xxl:text-base">
+                <img src={icon_4} alt="" className="functionality-image mb-5" />
+                <h3 className="sm:text-start">4. Comprehensive Feature</h3>
+                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight provides a rich set of features, including
                   network virtualization, SDN, network automation, traffic
                   engineering, and more, enabling users to build advanced
@@ -123,9 +126,9 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
               <div className="Scalability">
-                <img src={icon_5} alt="" className="mb-5" />
+                <img src={icon_5} alt="" className="functionality-image mb-5" />
                 <h3>5. Scalability</h3>
-                <p className="functionality-body xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight is engineered for seamless scalability, catering
                   to networks spanning diverse sizes and complexities – from
                   modest enterprise setups to extensive service provider
@@ -133,9 +136,9 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
               <div className="Community Support">
-                <img src={icon_6} alt="" className="mb-5" />
+                <img src={icon_6} alt="" className="functionality-image mb-5" />
                 <h3>6. Community Support</h3>
-                <p className="functionality-body xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight has a vibrant and active community that provides
                   support, resources, and collaboration opportunities to users.
                   This community-driven approach ensures that users can get
@@ -146,23 +149,17 @@ const Homepage = ({ theme }) => {
           </div>
         </div>
       </div>
-      <div className="community flex flex-col justify-center items-center py-12 align-bottom">
-        <h3 className="community-text bg-color mt-10">
+      <div className="community flex flex-col justify-center items-center sm:px-6 lg:px-0 sm:py-6 xl:py-12 align-bottom">
+        <h3 className="community-text sm:text-lg lg:text-xl xl:text-2xl sm:text-center  mt-10">
           OpenDaylight would like to thank the following project for supporting
           the community
         </h3>
-        <img
-          className="community-image"
-          style={{ width: 180 }}
-          src={yourkit}
-          alt=""
-          srcset=""
-        />
+        <img className="community-image" src={yourkit} alt="" srcset="" />
       </div>
       {/*Email Form*/}
-      <div className="email-form py-16 px-80">
-        <div className="container mx-auto  ">
-          <h3 className="email-heading text-center mb-8">
+      <div className="email-form py-16 lg:px-28 xl:px-52 xxl:px-80">
+        <div className="container mx-auto sm:px-8 lg:px-0">
+          <h3 className="email-heading sm:text-xl lg:text-2xl text-center mb-8">
             Stay Connected with the LF Networking Newsletter
           </h3>
           <div className="email-inputs">
@@ -173,7 +170,7 @@ const Homepage = ({ theme }) => {
                   className="input-box"
                   type="text"
                   placeholder="First Name"
-                  required // Make the input required
+                  required
                 />
               </div>
               <div className="last-name mb-7">
@@ -182,7 +179,7 @@ const Homepage = ({ theme }) => {
                   className="input-box"
                   type="text"
                   placeholder="Last Name"
-                  required // Make the input required
+                  required
                 />
               </div>
               <div className="last-name mb-7">
@@ -191,18 +188,18 @@ const Homepage = ({ theme }) => {
                   className="input-box"
                   type="email"
                   placeholder="Company Email"
-                  required // Make the input required
+                  required
                 />
               </div>
               <div className="email-text ml-1 mb-7 ">
                 <div className="flex items-start">
                   <input
                     type="checkbox"
-                    className="form-checkbox h-5 w-5 mt-1 text-indigo-600"
+                    className="form-checkbox h-5 w-5 mt-0.5 text-indigo-600"
                     checked={isChecked}
                     onChange={handleCheckboxChange}
                   />
-                  <label className="ml-2 email-text">
+                  <label className="ml-2 email-text sm:text-xs xl:text-base">
                     In addition, I would like to receive marketing emails about
                     news, events, and training from The Linux Foundation and its
                     Projects. I understand that I can unsubscribe at any time.
