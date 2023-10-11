@@ -54,11 +54,11 @@ const Governance = () => {
   return (
     <div>
       <div className="governance-banner">
-        <div className="governance-box container mx-auto text-center xl:p-14 xxl:p-28">
-          <h1 className="governance-title pb-8 xl:text-4xl xxl:text-7xl uppercase">
+        <div className="governance-box container mx-auto text-center sm:p-8 lg:p-12 xl:p-14 xxl:p-28">
+          <h1 className="governance-title pb-8 sm:text-3xl lg:text-4xl xxl:text-7xl uppercase">
             Committed to the Future
           </h1>
-          <p className="governance-body xl:text-lg xxl:text-2xl font-normal xl:px-56 xxl:px-32 text-center">
+          <p className="governance-body sm:text-base xl:text-lg xxl:text-2xl font-normal lg:px-12 xl:px-56 xxl:px-32 text-center">
             OpenDaylight is a founding project of{' '}
             <a
               href="https://lfnetworking.org/"
@@ -73,13 +73,13 @@ const Governance = () => {
           </p>
         </div>
       </div>
-      <div className="container mx-auto tsc-explain px-4">
-        <div className="tsc-columns grid grid-cols-3 gap gap-12 my-6">
-          <div className="tsc-theory text-center py-8">
+      <div className="container mx-auto tsc-explain sm:px-6 lg:px-6 xl:px-0">
+        <div className="tsc-columns grid sm:grid-cols-1 lg:grid-cols-3 gap sm:gap-5 lg:gap-12 my-6 ">
+          <div className="tsc-theory text-center sm:py-2 lg:py-8">
             <h3 className="tsc-title pb-5 xl:text-3xl xxl:text-4xl">
               What is TSC
             </h3>
-            <p className="tsc-body xl:text-base xxl:text-xl">
+            <p className="tsc-body sm:text-sm xl:text-base xxl:text-xl">
               TSC stands for "Technical Steering Committee." The Technical
               Steering Committee is a group of individuals within an
               organization or project responsible for providing technical
@@ -89,12 +89,12 @@ const Governance = () => {
               software-defined networking.
             </p>
           </div>
-          <div className="tsc-members text-center py-8">
+          <div className="tsc-members text-center sm:py-2 lg:py-8">
             <h3 className="tsc-title pb-5 xl:text-3xl xxl:text-4xl">
               How can I become a{' '}
               <span className="tsc-title block">TSC Member?</span>
             </h3>
-            <p className="tsc-body xl:text-base xxl:text-xl">
+            <p className="tsc-body sm:text-sm xl:text-base xxl:text-xl">
               OpenDaylight welcomes participation from anyone, allowing them to
               develop and contribute code, become elected members of the TSC,
               and contribute to the project's progress in various ways. The TSC
@@ -103,11 +103,11 @@ const Governance = () => {
               leadership for OpenDaylight.
             </p>
           </div>
-          <div className="tsc-governance text-center py-8">
-            <h3 className="tsc-title pb-5 xl:text-3xl xxl:text-4xl">
+          <div className="tsc-governance text-center sm:py-2 lg:py-8">
+            <h3 className="tsc-title pb-5  xl:text-3xl xxl:text-4xl">
               Our Governance Model
             </h3>
-            <p className="tsc-body xl:text-base xxl:text-xl">
+            <p className="tsc-body sm:text-sm xl:text-base xxl:text-xl">
               OpenDaylight follows an open governance model to ensure
               transparent decision-making and community participation. To
               understand more about OpenDaylight's governance model, you can
@@ -119,9 +119,9 @@ const Governance = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-5 mb-16">
+      <div className="container mx-auto mt-5 mb-16 sm:px-6 lg:px-6 xl:px-0">
         <div className="members-heading">
-          <h2 className="text-center pb-10">TSC Members</h2>
+          <h2 className="text-center lg:pb-10 sm:my-10 lg:my-0">TSC Members</h2>
         </div>
         <div className="grid sm:grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 align-middle">
           {/* Using map so that new card automatically get's created when new person is added. */}
@@ -130,15 +130,17 @@ const Governance = () => {
               key={index}
               className="cards-box p-4 rounded-lg shadow-xl flex "
             >
-              <div className="cards">
+              <div className="cards persons-images my-auto">
                 <img
                   src={person.image}
                   alt={`Person ${index}`}
-                  className="xl:w-32 xxl:w-36 h-1w rounded-full"
+                  className="sm:w-32 lg:w-24 xl:w-32 xxl:w-3 h-1w rounded-full"
                 />
               </div>
-              <div className="cards my-4 pl-8 pt-5">
-                <h2 className="cards text-xl font-semibold ">{person.name}</h2>
+              <div className="cards my-4 lg:pl-4 lg:pt-2 xl:pl-8 xl:pt-5">
+                <h2 className="cards sm:text-lg lg:text-lg xl:text-xl font-semibold ">
+                  {person.name}
+                </h2>
                 <div className="social-links mt-3 flex gap-2">
                   <a
                     href={person.linkedin}
