@@ -137,7 +137,7 @@ const Governance = () => {
                   className="sm:w-32 lg:w-24 xl:w-32 xxl:w-32 h-1w rounded-full"
                 />
               </div>
-              <div className="cards my-4 lg:pl-4 lg:pt-2 xl:pl-8 xl:pt-5">
+              <div className="cards my-4 sm:pl-4 lg:pt-2 xl:pl-8 xl:pt-5">
                 <h2 className="cards sm:text-lg lg:text-lg xl:text-xl font-semibold ">
                   {person.name}
                 </h2>

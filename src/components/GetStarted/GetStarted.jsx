@@ -75,7 +75,7 @@ const personality = [
     name: 'Venkatrangan',
     designation: 'TSC Chair, OpenDaylight',
     description:
-      'Venkatrangan Govindaragan is the offical TSC chair for the OpenDaylight Community.',
+      'Venkatrangan Govindaragan is the offical TSC chair for the OpenDaylight Community for this year.',
     company: 'Nvidia',
     linkedin:
       'https://www.linkedin.com/in/venkatrangan-govindarajan-sdn-test-automation/',
@@ -87,7 +87,7 @@ const GettingStarted = () => {
   return (
     <div>
       <div className="started-banner mb-20">
-        <div className="started-box container mx-auto text-center sm:p-9 xl:p-10 xxl:p-20">
+        <div className="started-box mx-auto text-center sm:p-9 xl:p-10 xxl:p-20">
           <div className="started-box">
             <h1 className="started-title sm:pb-4 xl:pb-6 xxl:pb-9 xl:text-5xl xxl:text-7xl">
               Get <span className="started-span">Started</span>
@@ -176,7 +176,7 @@ const GettingStarted = () => {
                 <p className="text-normal font-semibold mb-3">
                   {personality.designation}
                 </p>
-                <p className="xl:text-sm xxl:text-base sm:w-100 xl:w-11/12">
+                <p className="lg:text-sm xxl:text-base sm:w-100 xl:w-11/12">
                   {personality.description}
                 </p>
               </div>

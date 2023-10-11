@@ -156,3 +156,82 @@
     width: 100px;
   }
 }
+
+/*tablet*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .success {
+    height: 750px;
+  }
+  .odl-logo {
+    width: 1200px;
+  }
+
+  .user-stories {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 90%);
+  }
+
+  .success-box {
+    border-radius: 100px 0px 0px 0px;
+    background: #fff5db;
+    backdrop-filter: blur(2px);
+    width: 316px;
+    height: 300px;
+    flex-shrink: 0;
+    position: relative;
+    top: -400px;
+    left: 100px;
+  }
+
+  .blue-box {
+    background-color: #f5f9ff;
+    border-radius: 150px 0px 0px 0px;
+    width: 700px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .asd-card {
+    top: 580px;
+    left: 45%;
+  }
+
+  .nro-card {
+    top: 940px;
+    left: 45%;
+  }
+
+  .nfv-card {
+    top: 520px;
+    left: 72%;
+  }
+
+  .visibility-card {
+    top: 880px;
+    left: 72%;
+  }
+
+  .card-image {
+    width: 70px;
+  }
+}
+
+/*Mobile View*/
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .odl-image {
+    display: none;
+  }
+  .user-stories {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 90%);
+  }
+
+  .testimonials-boxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote-image {
+    width: 30px;
+  }
+}
