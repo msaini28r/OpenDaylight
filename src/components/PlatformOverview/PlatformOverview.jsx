@@ -12,9 +12,9 @@ const PlatformOverview = ({ theme }) => {
         <h1 className="banner-text">Platform Overview</h1>
         <img className="banner-image" src={banner_dark} alt="" />
       </div>
-      <div className="container mx-auto py-5">
+      <div className="container mx-auto py-5 sm:px-6 lg:px-8 xl:px-0">
         <div className="platform-text">
-          <p className="pb-3">
+          <p className="pb-3 sm:text-xs xl:text-base">
             OpenDaylight (ODL) is a modular open platform for customizing and
             automating networks of any size and scale. The OpenDaylight Project
             arose out of the SDN movement, with a clear focus on network
@@ -22,7 +22,7 @@ const PlatformOverview = ({ theme }) => {
             commercial solutions that address a variety of use cases in existing
             network environments.
           </p>
-          <p className="pb-3">
+          <p className="pb-3 sm:text-xs xl:text-base">
             OpenDaylight is the most widely deployed open source SDN controller
             platform and in just 8 years, OpenDaylight boasts 13 releases, 1000+
             authors/submitters, 100K+ commits, and powers networks of 1B+ global
@@ -31,20 +31,20 @@ const PlatformOverview = ({ theme }) => {
             range of services. It is also at the core of broader open source
             frameworks, <span>including ONAP.</span>
           </p>
-          <p>
+          <p className="sm:text-xs xl:text-base">
             As part of <span>LF Networking</span>, ODL is driven by a global,
             collaborative community of vendor and user organizations that
             continuously adapts to support the industry’s broadest set of SDN
             and NFV <span>use cases.</span>
           </p>
         </div>
-        <div className="architecture">
-          <h1 className="architecture-heading pb-6">
+        <div className="architecture ">
+          <h1 className="architecture-heading sm:my-9 lg:my-6 xl:my-6 sm:text-2xl lg:text-3xl xl:text-4xl">
             The OpenDaylight Architecture
           </h1>
           <div className="model-box">
-            <h3 className="title pb-3">Model Driven</h3>
-            <div className="row">
+            <h3 className="title pb-3 sm:text-2xl lg:text-3xl">Model Driven</h3>
+            <div className="row sm:text-xs xl:text-base">
               <div className="column-1 pb-5">
                 <p className="pb-3">
                   The core of the OpenDaylight platform is the Model-Driven
@@ -88,7 +88,7 @@ const PlatformOverview = ({ theme }) => {
           </div>
           <div className="modular-protocol pb-6">
             <h3 className="title pb-6">Module and Multiprotocol</h3>
-            <div className="row">
+            <div className="row sm:text-xs xl:text-base">
               <div className="column-3 pr-8">
                 <img className="shape_2" src={shape_2} alt="" srcset="" />
               </div>
@@ -148,7 +148,7 @@ const PlatformOverview = ({ theme }) => {
             <h3 className="title pb-5">
               S3P: Security, Scalability, Stability and Performance
             </h3>
-            <div className="row">
+            <div className="row sm:text-xs xl:text-base">
               <div className="column-5">
                 <p className="pb-8">
                   The ODL community provides continual improvements across all
@@ -184,16 +184,16 @@ const PlatformOverview = ({ theme }) => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="summary">
-          <div className="title pb-3">Summary</div>
-          <p>
-            The modularity and flexibility of OpenDaylight allows end users to
-            select whichever features matter to them and to create controllers
-            that meets their individual needs. We have a very supportive,
-            growing and active community of hundreds of developers who are
-            continuously evolving and expanding the platform.
-          </p>
+          <div className="summary">
+            <h3 className="title pb-3">Summary</h3>
+            <p className="sm:text-xs xl:text-base">
+              The modularity and flexibility of OpenDaylight allows end users to
+              select whichever features matter to them and to create controllers
+              that meets their individual needs. We have a very supportive,
+              growing and active community of hundreds of developers who are
+              continuously evolving and expanding the platform.
+            </p>
+          </div>
         </div>
       </div>
     </>

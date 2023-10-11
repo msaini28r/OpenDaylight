@@ -134,7 +134,7 @@ const Governance = () => {
                 <img
                   src={person.image}
                   alt={`Person ${index}`}
-                  className="sm:w-32 lg:w-24 xl:w-32 xxl:w-3 h-1w rounded-full"
+                  className="sm:w-32 lg:w-24 xl:w-32 xxl:w-32 h-1w rounded-full"
                 />
               </div>
               <div className="cards my-4 lg:pl-4 lg:pt-2 xl:pl-8 xl:pt-5">
