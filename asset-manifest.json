@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/opendaylight/static/css/main.5bad3820.css",
-    "main.js": "/opendaylight/static/js/main.1270fc73.js",
+    "main.css": "/opendaylight/static/css/main.cd71b2cf.css",
+    "main.js": "/opendaylight/static/js/main.aaa122eb.js",
     "static/media/Robert.png": "/opendaylight/static/media/Robert.9b5abad6c9013904237f.png",
     "static/media/Manoj.png": "/opendaylight/static/media/Manoj.8457e5f3d656b8aeec7e.png",
     "static/media/Ivan.png": "/opendaylight/static/media/Ivan.aff6627889a6f1bd5a4f.png",
@@ -29,11 +29,11 @@
     "static/media/shape_3.png": "/opendaylight/static/media/shape_3.69a430cd77ba07ac86ee.png",
     "static/media/maze_dark.png": "/opendaylight/static/media/maze_dark.47c2536d2d51e8b14210.png",
     "index.html": "/opendaylight/index.html",
-    "main.5bad3820.css.map": "/opendaylight/static/css/main.5bad3820.css.map",
-    "main.1270fc73.js.map": "/opendaylight/static/js/main.1270fc73.js.map"
+    "main.cd71b2cf.css.map": "/opendaylight/static/css/main.cd71b2cf.css.map",
+    "main.aaa122eb.js.map": "/opendaylight/static/js/main.aaa122eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bad3820.css",
-    "static/js/main.1270fc73.js"
+    "static/css/main.cd71b2cf.css",
+    "static/js/main.aaa122eb.js"
   ]
 }
