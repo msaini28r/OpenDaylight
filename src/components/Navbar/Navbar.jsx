@@ -36,17 +36,17 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-72"
             >
               <li>
-                <Link to="/about" className={textColor}>
+                <Link to="/opendaylight/about" className={textColor}>
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/governance" className={textColor}>
+                <Link to="/opendaylight/governance" className={textColor}>
                   Governance
                 </Link>
               </li>
               <li>
-                <Link to="/user-stories" className={textColor}>
+                <Link to="/opendaylight/user-stories" className={textColor}>
                   User Stories
                 </Link>
               </li>
@@ -55,18 +55,21 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
                   <summary className={textColor}>Solutions</summary>
                   <ul className="p-2 w-64">
                     <li>
-                      <Link to="/platform-overview" className={textColor}>
+                      <Link
+                        to="/opendaylight/platform-overview"
+                        className={textColor}
+                      >
                         Platform Overview
                       </Link>
                     </li>
                     <li>
-                      <Link to="/cloud-nvf" className={textColor}>
+                      <Link to="/opendaylight/cloud-nvf" className={textColor}>
                         Cloud and NFV
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/automated-service-delivery"
+                        to="/opendaylight/automated-service-delivery"
                         className={textColor}
                       >
                         Automated Delivery System
@@ -74,7 +77,7 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
                     </li>
                     <li>
                       <Link
-                        to="/network-resource-optimization"
+                        to="/opendaylight/network-resource-optimization"
                         className={textColor}
                       >
                         Network Resource Optimization
@@ -84,7 +87,7 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
                 </details>
               </li>
               <li>
-                <Link to="/get-started" className={textColor}>
+                <Link to="/opendaylight/get-started" className={textColor}>
                   Get Started
                 </Link>
               </li>
@@ -92,7 +95,7 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
           </div>
         </div>
         <div>
-          <Link to="/">
+          <Link to="/opendaylight/homepage">
             {theme === 'dark-theme' ? (
               <img
                 src={odl_light_logo}
@@ -112,17 +115,17 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
       <div className="navbar-center hidden xl:flex ml-56">
         <ul className="menu menu-horizontal">
           <li>
-            <Link to="/about" className={textColor}>
+            <Link to="/opendaylight/about" className={textColor}>
               About
             </Link>
           </li>
           <li>
-            <Link to="/governance" className={textColor}>
+            <Link to="/opendaylight/governance" className={textColor}>
               Governance
             </Link>
           </li>
           <li>
-            <Link to="/user-stories" className={textColor}>
+            <Link to="/opendaylight/user-stories" className={textColor}>
               User Stories
             </Link>
           </li>
@@ -131,23 +134,29 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
               <summary className={textColor}>Solutions</summary>
               <ul className="p-2 w-72 z-20 text-xs">
                 <li>
-                  <Link to="/platform-overview" className={textColor}>
+                  <Link
+                    to="/opendaylight/platform-overview"
+                    className={textColor}
+                  >
                     Platform Overview
                   </Link>
                 </li>
                 <li>
-                  <Link to="/cloud-nvf" className={textColor}>
+                  <Link to="/opendaylight/cloud-nvf" className={textColor}>
                     Cloud and NFV
                   </Link>
                 </li>
                 <li>
-                  <Link to="/automated-service-delivery" className={textColor}>
+                  <Link
+                    to="/opendaylight/automated-service-delivery"
+                    className={textColor}
+                  >
                     Automated Delivery System
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/network-resource-optimization"
+                    to="/opendaylight/network-resource-optimization"
                     className={textColor}
                   >
                     Network Resource Optimization
@@ -157,7 +166,7 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
             </details>
           </li>
           <li>
-            <Link to="/get-started" className={textColor}>
+            <Link to="/opendaylight/get-started" className={textColor}>
               Get Started
             </Link>
           </li>

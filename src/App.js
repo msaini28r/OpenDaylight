@@ -28,23 +28,41 @@ function App() {
       <Router>
         <Navbar theme={theme} toggleTheme={toggleTheme} rotation={rotation} />
         <Routes>
-          <Route path="/" element={<Homepage theme={theme} />} />
-          <Route path="/about" element={<About theme={theme} />} />
-          <Route path="/governance" element={<Governance theme={theme} />} />
-          <Route path="/user-stories" element={<UserStories theme={theme} />} />
-          <Route path="/solutions" element={<Solutions theme={theme} />} />
-          <Route path="/get-started" element={<GetStarted theme={theme} />} />
           <Route
-            path="/platform-overview"
+            path="/opendaylight/homepage"
+            element={<Homepage theme={theme} />}
+          />
+          <Route path="/opendaylight/about" element={<About theme={theme} />} />
+          <Route
+            path="/opendaylight/governance"
+            element={<Governance theme={theme} />}
+          />
+          <Route
+            path="/opendaylight/user-stories"
+            element={<UserStories theme={theme} />}
+          />
+          <Route
+            path="/opendaylight/solutions"
+            element={<Solutions theme={theme} />}
+          />
+          <Route
+            path="/opendaylight/get-started"
+            element={<GetStarted theme={theme} />}
+          />
+          <Route
+            path="/opendaylight/platform-overview"
             element={<PlatformOverview theme={theme} />}
           />
           <Route
-            path="/automated-service-delivery"
+            path="/opendaylight/automated-service-delivery"
             element={<AutomatedService theme={theme} />}
           />
-          <Route path="/cloud-nvf" element={<CloudNvf theme={theme} />} />
           <Route
-            path="/network-resource-optimization"
+            path="/opendaylight/cloud-nvf"
+            element={<CloudNvf theme={theme} />}
+          />
+          <Route
+            path="/opendaylight/network-resource-optimization"
             element={<NetworkResource theme={theme} />}
           />
         </Routes>

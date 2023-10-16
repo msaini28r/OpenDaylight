@@ -12,7 +12,7 @@ const Footer = ({ theme }) => {
         <div className="footer">
           <div className="footer-content">
             <div className="pb-3">
-              <Link to="/">
+              <Link to="/opendaylight/homepage">
                 {theme === 'dark-theme' ? (
                   <img
                     src={odl_light_logo}
