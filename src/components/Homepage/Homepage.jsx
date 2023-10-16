@@ -84,8 +84,14 @@ const Homepage = ({ theme }) => {
           <div className="grid sm:grid-rows-1 lg:grid-rows-2 sm:py-10 xl:py-0 lg:px-10">
             <div className="functionality-row grid sm:grid-cols-1 lg:grid-cols-3 sm:gap-16 xl:gap-14 xxl:gap-16 mb-16">
               <div className="flexibility">
-                <img src={icon_1} alt="" className="functionality-image mb-5" />
-                <h3>1. Flexibilty</h3>
+                <div className="functionality-title">
+                  <img
+                    src={icon_1}
+                    alt=""
+                    className="functionality-image md:mb-5"
+                  />
+                  <h3>Flexibilty</h3>
+                </div>
                 <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight offers a flexible and modular architecture,
                   allowing users to customize its capabilities to suit their
@@ -94,8 +100,14 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
               <div className="Open Source">
-                <img src={icon_2} alt="" className="functionality-image mb-5" />
-                <h3>2. Open Source</h3>
+                <div className="functionality-title">
+                  <img
+                    src={icon_2}
+                    alt=""
+                    className="functionality-image md:mb-5"
+                  />
+                  <h3>Open Source</h3>
+                </div>
                 <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   Being an open-source platform, OpenDaylight fosters
                   collaboration and innovation among a diverse community of
@@ -104,8 +116,14 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
               <div className="Vendor Neutrality">
-                <img src={icon_3} alt="" className="functionality-image mb-5" />
-                <h3>3. Vendor Neutrality</h3>
+                <div className="functionality-title">
+                  <img
+                    src={icon_3}
+                    alt=""
+                    className="functionality-image md:mb-5"
+                  />
+                  <h3>Vendor Neutrality</h3>
+                </div>
                 <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight is vendor-agnostic, supporting diverse networking
                   devices and technologies, enabling users to avoid vendor
@@ -116,8 +134,14 @@ const Homepage = ({ theme }) => {
             </div>
             <div className="functionality-row grid sm:grid-cols-1 lg:grid-cols-3 gap-16">
               <div className=" Comprehensive Feature">
-                <img src={icon_4} alt="" className="functionality-image mb-5" />
-                <h3 className="sm:text-start">4. Comprehensive Feature</h3>
+                <div className="functionality-title">
+                  <img
+                    src={icon_4}
+                    alt=""
+                    className="functionality-image md:mb-5"
+                  />
+                  <h3 className="sm:text-start">Comprehensive Feature</h3>
+                </div>
                 <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight provides a rich set of features, including
                   network virtualization, SDN, network automation, traffic
@@ -126,8 +150,14 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
               <div className="Scalability">
-                <img src={icon_5} alt="" className="functionality-image mb-5" />
-                <h3>5. Scalability</h3>
+                <div className="functionality-title">
+                  <img
+                    src={icon_5}
+                    alt=""
+                    className="functionality-image md:mb-5"
+                  />
+                  <h3>Scalability</h3>
+                </div>
                 <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight is engineered for seamless scalability, catering
                   to networks spanning diverse sizes and complexities – from
@@ -136,8 +166,14 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
               <div className="Community Support">
-                <img src={icon_6} alt="" className="functionality-image mb-5" />
-                <h3>6. Community Support</h3>
+                <div className="functionality-title">
+                  <img
+                    src={icon_6}
+                    alt=""
+                    className="functionality-image md:mb-5"
+                  />
+                  <h3>Community Support</h3>
+                </div>
                 <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
                   OpenDaylight has a vibrant and active community that provides
                   support, resources, and collaboration opportunities to users.

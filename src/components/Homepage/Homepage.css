@@ -196,7 +196,7 @@
 /*Mobile View*/
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .functionality-row h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .functionality-body {
@@ -212,9 +212,16 @@
 
   .functionality-image {
     width: 60px;
+    margin-right: 20px;
   }
 
   .community-image {
     width: 130px;
+  }
+
+  .functionality-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
   }
 }
