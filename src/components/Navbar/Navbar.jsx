@@ -92,7 +92,7 @@ const Navbar = ({ theme, toggleTheme, rotation }) => {
           </div>
         </div>
         <div>
-          <Link to="/">
+          <Link to="/homepage">
             {theme === 'dark-theme' ? (
               <img
                 src={odl_light_logo}
