@@ -28,7 +28,7 @@ const Footer = ({ theme }) => {
                 )}
               </Link>
             </div>
-            <p className="footer-text">
+            <p className="footer-text md:text-xs lg:text-base">
               OpenDaylight (ODL) is a modular open platform for customizing and
               automating networks of any size and scale. There’s no better way
               to help drive forward the field of networking than to join the

@@ -24,14 +24,14 @@ const Homepage = ({ theme }) => {
     e.preventDefault()
   }
   return (
-    <div className=" md:px-12 lg:px-0">
+    <div className="">
       {/* home-section */}
-      <div className="mx-auto home lg:flex content-center gap-14 sm:py-12 xl:pt-16 lg:pb-20 xl:pb-36 xxl:pb-36 lg:mb-4 xl:mb-40 xxl:mb-44 sm:px-8 lg:px-10 xl:px-14 xxl:px-48 relative">
+      <div className="mx-auto home md:flex content-center gap-14 sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 xxl:pb-36 lg:mb-4 xl:mb-40 xxl:mb-44 sm:px-8 lg:px-10 xl:px-14 xxl:px-48 relative">
         <div className="home-text lg:pt-2 xl:pt-8 align-middle">
           <h1 className="home-title sm:text-3xl lg:text-4xl xl:text-6xl xxl:text-7xl uppercase">
             Automating <span>networks of any</span> size & scale.
           </h1>
-          <p className="home-text font-normal sm:text-base xl:text-xl xxl:text-3xl text-justify py-6 lg:pr-4">
+          <p className="home-text font-normal sm:text-base md:text-sm lg:text-base xl:text-xl xxl:text-3xl text-justify py-6 lg:pr-4">
             The OpenDaylight project is an open source platform for Software
             Defined Networking (SDN) that uses open protocols to provide
             centralized, programmatic control and network device monitoring.
@@ -43,7 +43,7 @@ const Homepage = ({ theme }) => {
             Learn More
           </button>
         </div>
-        <div className="hidden lg:block img-box mx-auto">
+        <div className="hidden md:block img-box mx-auto">
           {theme === 'dark-theme' ? (
             <img className="map" src={map_dark} alt="ODL Dark Logo" />
           ) : (
@@ -51,13 +51,13 @@ const Homepage = ({ theme }) => {
           )}
         </div>
       </div>
-      <hr className="lg:hidden" />
+      <hr className="md:hidden" />
       <div className="container mx-auto sm:px-8 md:px-0">
         {/* stats-box */}
-        <div className="container mx-auto stats justify-between flex lg:py-8 xl:py-16 px-5 rounded-xl absolute sm:hidden lg:flex">
+        <div className="container mx-auto stats justify-between flex md:py-8 xl:py-16 px-5 rounded-xl absolute sm:hidden md:flex">
           <div className="stats-box ">
             <img className="stats-icon" src={release} alt="" srcset="" />
-            <h3 className="stats-text lg:text-base xl:text-xl xxl:text-2xl">
+            <h3 className="stats-text xl:text-xl xxl:text-2xl">
               Release: 18 Argon
             </h3>
           </div>
@@ -77,12 +77,12 @@ const Homepage = ({ theme }) => {
         {/* why opendaylight/functionality section */}
         <div className="function text-justify xl:my-4 xxl:my-12">
           <h2 className="function-text ">
-            <center className="sm:my-10 lg:mt-24 xl:my-28 sm:text-3xl xl:text-4xl">
+            <center className="sm:my-10 md:mt-24 xl:my-28 sm:text-3xl xl:text-4xl">
               Why Opendaylight?
             </center>
           </h2>
-          <div className="grid sm:grid-rows-1 lg:grid-rows-2 sm:py-10 xl:py-0 lg:px-10">
-            <div className="functionality-row grid sm:grid-cols-1 lg:grid-cols-3 sm:gap-16 xl:gap-14 xxl:gap-16 mb-16">
+          <div className="grid sm:grid-rows-1 md:grid-rows-2 sm:py-10 xl:py-0 lg:px-10">
+            <div className="functionality-row grid sm:grid-cols-1 md:grid-cols-3 sm:gap-16 md:gap-8 xl:gap-14 xxl:gap-16 mb-16 md:px-10 lg:px-0">
               <div className="flexibility">
                 <div className="functionality-title">
                   <img
@@ -92,7 +92,7 @@ const Homepage = ({ theme }) => {
                   />
                   <h3>Flexibilty</h3>
                 </div>
-                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm md:text-xs xl:text-sm xxl:text-base">
                   OpenDaylight offers a flexible and modular architecture,
                   allowing users to customize its capabilities to suit their
                   specific networking needs, making it a cost-effective choice
@@ -108,7 +108,7 @@ const Homepage = ({ theme }) => {
                   />
                   <h3>Open Source</h3>
                 </div>
-                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm md:text-xs xl:text-sm xxl:text-base">
                   Being an open-source platform, OpenDaylight fosters
                   collaboration and innovation among a diverse community of
                   developers, resulting in frequent updates, bug fixes, and new
@@ -124,7 +124,7 @@ const Homepage = ({ theme }) => {
                   />
                   <h3>Vendor Neutrality</h3>
                 </div>
-                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm md:text-xs xl:text-sm xxl:text-base">
                   OpenDaylight is vendor-agnostic, supporting diverse networking
                   devices and technologies, enabling users to avoid vendor
                   lock-in and choose optimal solutions for their network
@@ -132,7 +132,7 @@ const Homepage = ({ theme }) => {
                 </p>
               </div>
             </div>
-            <div className="functionality-row grid sm:grid-cols-1 lg:grid-cols-3 gap-16">
+            <div className="functionality-row grid sm:grid-cols-1 md:grid-cols-3 sm:gap-16 md:gap-8 xl:gap-14 xxl:gap-16 md:px-8 lg:px-0">
               <div className=" Comprehensive Feature">
                 <div className="functionality-title">
                   <img
@@ -140,9 +140,9 @@ const Homepage = ({ theme }) => {
                     alt=""
                     className="functionality-image md:mb-5"
                   />
-                  <h3 className="sm:text-start">Comprehensive Feature</h3>
+                  <h3 className="sm:text-start">Features</h3>
                 </div>
-                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm md:text-xs xl:text-sm xxl:text-base">
                   OpenDaylight provides a rich set of features, including
                   network virtualization, SDN, network automation, traffic
                   engineering, and more, enabling users to build advanced
@@ -158,7 +158,7 @@ const Homepage = ({ theme }) => {
                   />
                   <h3>Scalability</h3>
                 </div>
-                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm md:text-xs xl:text-sm xxl:text-base">
                   OpenDaylight is engineered for seamless scalability, catering
                   to networks spanning diverse sizes and complexities – from
                   modest enterprise setups to extensive service provider
@@ -174,7 +174,7 @@ const Homepage = ({ theme }) => {
                   />
                   <h3>Community Support</h3>
                 </div>
-                <p className="functionality-body sm:text-sm xl:text-sm xxl:text-base">
+                <p className="functionality-body sm:text-sm md:text-xs xl:text-sm xxl:text-base">
                   OpenDaylight has a vibrant and active community that provides
                   support, resources, and collaboration opportunities to users.
                   This community-driven approach ensures that users can get
@@ -185,8 +185,8 @@ const Homepage = ({ theme }) => {
           </div>
         </div>
       </div>
-      <div className="community flex flex-col justify-center items-center sm:px-6 lg:px-0 sm:py-6 xl:py-12 align-bottom">
-        <h3 className="community-text sm:text-lg lg:text-xl xl:text-2xl sm:text-center  mt-10">
+      <div className="community flex flex-col justify-center items-center sm:px-6 lg:px-0 sm:py-6 md:py-2 xl:py-12 align-bottom">
+        <h3 className="community-text sm:text-lg md:text-base lg:text-xl xl:text-2xl sm:text-center mt-10">
           OpenDaylight would like to thank the following project for supporting
           the community
         </h3>

@@ -150,7 +150,7 @@
 }
 
 /* Tablet view */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .functionality-row h3 {
     font-size: 20px;
   }
@@ -165,6 +165,12 @@
 
   .stats-box {
     padding: 0px 10px;
+  }
+
+  .stats-text {
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 10px;
   }
   .stats {
     top: 480px;
@@ -193,8 +199,21 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .stats-text {
+    font-size: 14px;
+  }
+
+  .stats {
+    top: 460px;
+  }
+  .map {
+    width: 1300px;
+  }
+}
+
 /*Mobile View*/
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .functionality-row h3 {
     font-size: 20px;
   }

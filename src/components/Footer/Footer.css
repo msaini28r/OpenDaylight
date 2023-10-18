@@ -62,7 +62,17 @@
   color: black;
 }
 
-@media (max-width: 480px) {
+/* Tablet view */
+@media screen and (max-width: 768px) {
+  .footer-text {
+    width: 300px;
+    text-align: justify;
+    letter-spacing: -0.7px;
+  }
+}
+
+/*Mobile View*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .footer-text {
     width: 100%;
   }
