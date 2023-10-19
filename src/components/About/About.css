@@ -81,23 +81,24 @@
     height: 200px;
   }
 }
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+/*Tablet view*/
+@media screen and (min-width: 1024px) {
   .about-image,
   .sdn-image,
   .training-image {
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
 
   .about-icon {
-    width: 360px;
-    height: 480px;
+    width: 300px;
+    height: 440px;
   }
 
   .sdn-icon {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
   }
 
   .training-icon {
@@ -106,7 +107,33 @@
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .about-image,
+  .sdn-image,
+  .training-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-icon {
+    width: 280px;
+    height: 400px;
+  }
+
+  .sdn-icon {
+    width: 320px;
+    height: 400px;
+  }
+
+  .training-icon {
+    width: 380px;
+    height: 160px;
+  }
+}
+
+/*Mpbile View*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .about,
   .training {
     display: flex;

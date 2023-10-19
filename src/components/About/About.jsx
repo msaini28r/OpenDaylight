@@ -17,7 +17,7 @@ const About = ({ theme }) => {
             <span className="unleash-banner block font-bold">OpenDaylight</span>
           </h1>
           <p
-            className="unleash-body sm:text-sm xl:text-base xxl:text-2xl font-normal xl:px-56
+            className="unleash-body sm:text-sm md:text-xs lg:text-sm xl:text-base xxl:text-2xl font-normal xl:px-56
            xxl:px-32 leading-7"
           >
             Founded in 2013, OpenDaylight is part of LF Networking (LFN), an
@@ -37,8 +37,8 @@ const About = ({ theme }) => {
       </div>
       <div className="container mx-auto sm:p-8 xl:p-0 xxl:p-0">
         <div className="about sm:mb-4 xl:mb-0 xl:py-16 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
-          <div className="about-text text-start sm:text-sm xl:text-sm xxl:text-base">
-            <h2 className="about-title lg:pb-6 sm:text-3xl xl:text-5xl">
+          <div className="about-text text-start sm:text-sm md:text-xs xl:text-sm xxl:text-base">
+            <h2 className="about-title  sm:text-2xl xl:text-5xl mb-3">
               About OpenDaylight
             </h2>
             <p className="text-justify pb-5">
@@ -98,8 +98,8 @@ const About = ({ theme }) => {
               <img className="sdn-icon" src={sdn_light} alt="ODL Light Logo" />
             )}
           </div>
-          <div className="sdn-text text-start sm:text-sm xl:text-sm xxl:text-base">
-            <h2 className="sdn-title pb-5 sm:text-3xl xl:text-5xl mb-3">
+          <div className="sdn-text text-start sm:text-sm md:text-xs xl:text-sm xxl:text-base">
+            <h2 className="sdn-title  sm:text-3xl xl:text-5xl mb-3">
               What is SDN?
             </h2>
             <p className="text-justify pb-5">
@@ -154,8 +154,8 @@ const About = ({ theme }) => {
           </div>
         </div>
         <div className="training sm:mb-4 xl:mb-0 xl:py-16 grid sm:grid-cols-1 md:grid-cols-2 gap-2">
-          <div className="training-text text-start sm:text-sm xl:text-sm xxl:text-base">
-            <h2 className="training-title pb-5 sm:text-3xl xl:text-5xl">
+          <div className="training-text text-start sm:text-sm md:text-xs xl:text-sm xxl:text-base">
+            <h2 className="training-title sm:text-3xl xl:text-5xl mb-3">
               Training{' '}
             </h2>
             <p className="text-justify pb-5">
@@ -165,7 +165,7 @@ const About = ({ theme }) => {
                 Here are some online training options.
               </span>
             </p>
-            <p className="text-justify pb-5">
+            <p className="text-justify">
               Linux Foundation Training
               <ul className="list-disc pl-8 py-3">
                 <li>
