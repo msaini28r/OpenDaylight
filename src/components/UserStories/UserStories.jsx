@@ -17,7 +17,7 @@ const success = [
   },
   {
     image: nro_icon,
-    title: ' Network Resources Optimization (NRO)',
+    title: ' Network Resources Optimization',
     description: 'Dynamically optimizing the network based on load and state.',
     link: 'https://www.google.com/',
   },
@@ -43,7 +43,7 @@ const UserStories = () => {
       {/* user-stories section */}
       <div className="user-stories mx-auto user flex content-center xl:gap-0 xxl:gap-2 sm:pt-5 lg:pt-10 xl:pt-16 xxl:pt-28 sm:pb-10 lg:pb-20 xl:pb-24 xxl:pb-36 xl:mb-8 xxl:mb-16 sm:px-6 lg:px-8 xl:px-14 xxl:px-48 ">
         <div className="user-text xl:pr-8 align-middle">
-          <h1 className="user-title sm:text-4xl lg:text-6xl xl:text-7xl xxl:text-8xl capitalize mb-2 ">
+          <h1 className="user-title sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl xxl:text-8xl capitalize mb-2 ">
             Utilize usecases <span className="block">that grow your</span>{' '}
             business.
           </h1>
@@ -140,11 +140,11 @@ const UserStories = () => {
                 <img
                   src={value.image}
                   alt={`Person ${index}`}
-                  className="sm:w-20 rounded-full"
+                  className="sm:w-20 rounded-full mt-6"
                 />
               </div>
               <div className="cards my-4">
-                <h3 className="text-2xl mb-3">{value.title}</h3>
+                <h3 className="md:text-base lg:text-2xl mb-3">{value.title}</h3>
                 <p className="text-center text-sm mb-5">{value.description}</p>
                 <a
                   href={value.link}

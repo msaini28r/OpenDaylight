@@ -158,12 +158,12 @@
 }
 
 /*tablet*/
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .success {
     height: 750px;
   }
   .odl-logo {
-    width: 1200px;
+    width: 1300px;
   }
 
   .user-stories {
@@ -193,22 +193,22 @@
   }
 
   .asd-card {
-    top: 580px;
+    top: 590px;
     left: 45%;
   }
 
   .nro-card {
-    top: 940px;
+    top: 960px;
     left: 45%;
   }
 
   .nfv-card {
-    top: 520px;
+    top: 550px;
     left: 72%;
   }
 
   .visibility-card {
-    top: 880px;
+    top: 910px;
     left: 72%;
   }
 
@@ -217,8 +217,19 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .odl-logo {
+    width: 1200px;
+    margin-bottom: 15px;
+  }
+
+  .user-stories {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 94%);
+  }
+}
+
 /*Mobile View*/
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .odl-image {
     display: none;
   }
