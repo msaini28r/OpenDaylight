@@ -82,7 +82,7 @@
   }
 }
 /*Tablet view*/
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .about-image,
   .sdn-image,
   .training-image {
