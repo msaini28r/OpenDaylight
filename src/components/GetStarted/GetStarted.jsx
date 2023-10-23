@@ -63,7 +63,7 @@ const personality = [
   {
     image: Casey,
     name: 'Jill Lovato',
-    designation: 'Marketing Director',
+    designation: 'Senior Marketing Director',
     description:
       'Jill leads communications, public relations and analyst relations for the LF Networking and LF Edge.',
     company: 'The Linux Foundation',
@@ -124,7 +124,7 @@ const GettingStarted = () => {
         <div className="resources-title">
           <h2 className="text-center mb-20">Resources</h2>
         </div>
-        <div className="resources-cards grid sm:grid-cols-1 gap-10 lg:grid-cols-3">
+        <div className="resources-cards grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Using map so that new card automatically get's created when new resources is added. */}
           {resources.map((resources, index) => (
             <div
@@ -156,14 +156,14 @@ const GettingStarted = () => {
           <h2 className="text-center xl:text-3xl xxl:text-4xl sm:mb-6 xl:mb-7 xxl:mb-10">
             Key Contacts
           </h2>
-          <p className="text-center  xl:text-xl xxl:text-2xl">
+          <p className="text-center xl:text-xl xxl:text-2xl">
             Need help related to something?{' '}
-            <span className="reach-out  sm:block lg:inline">
+            <span className="reach-out  sm:block md:inline">
               Reach out to us.
             </span>
           </p>
         </div>
-        <div className="personility grid sm:grid-cols-1 md:grid-cols-3 sm:gap-8 lg:gap-4 xl:gap-2 xxl:gap-9 sm:px-4 xl:px-0">
+        <div className="personility grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-8 lg:gap-4 xl:gap-2 xxl:gap-9 sm:px-4 xl:px-0">
           {personality.map((personality, index) => (
             <div className="media-card border xl:w-11/12 xxl:w-10/12 rounded-xl p-4">
               <div className="personality-image flex justify-center mb-6">
@@ -176,7 +176,7 @@ const GettingStarted = () => {
                 <p className="text-normal font-semibold mb-3">
                   {personality.designation}
                 </p>
-                <p className="lg:text-sm xxl:text-base sm:w-100 xl:w-11/12">
+                <p className="lg:text-sm xxl:text-base sm:w-100 xl:w-11/12 ">
                   {personality.description}
                 </p>
               </div>

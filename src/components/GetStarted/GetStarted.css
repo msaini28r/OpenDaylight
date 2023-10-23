@@ -43,7 +43,14 @@ s.light-theme .started-banner,
   color: #ff7426;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .resources-cards {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .resources-cards {
     display: flex;
     flex-direction: column;

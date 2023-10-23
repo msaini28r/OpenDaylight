@@ -64,7 +64,7 @@ const AutomatedService = ({ theme }) => {
               </div>
             </div>
           </div>
-          <div className="row pt-16 flex">
+          <div className="row sm:pt-10 md:pt-8 lg:pt-16 flex">
             <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={maze_dark} alt="Maze Logo" style={{ width: 300 }} />
@@ -88,7 +88,7 @@ const AutomatedService = ({ theme }) => {
               </div>
             </div>
           </div>
-          <div className="row pt-16 flex">
+          <div className="row sm:pt-10 md:pt-8 lg:pt-16 flex">
             <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={odl_dark} alt="odl Logo" style={{ width: 150 }} />
@@ -144,7 +144,7 @@ const AutomatedService = ({ theme }) => {
               </div>
             </div>
           </div>
-          <div className="row py-16 flex">
+          <div className="row sm:py-10 md:py-8 lg:py-16  flex">
             <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={quote_dark} alt="quote Logo" style={{ width: 100 }} />

@@ -82,7 +82,7 @@ const CloudNvf = ({ theme }) => {
               </div>
             </div>
           </div>
-          <div className="row pt-16 flex">
+          <div className="row sm:pt-10 md:pt-8 lg:pt-16 flex">
             <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={maze_dark} alt="Maze Logo" style={{ width: 400 }} />
@@ -161,7 +161,7 @@ const CloudNvf = ({ theme }) => {
               </div>
             </div>
           </div>
-          <div className="row pt-16 flex">
+          <div className="row sm:pt-10 md:pt-8 lg:pt-16 flex">
             <div className="column content-image pt-2">
               {theme === 'dark-theme' ? (
                 <img src={odl_dark} alt="odl Logo" style={{ width: 320 }} />
