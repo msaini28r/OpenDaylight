@@ -26,29 +26,31 @@ const Homepage = ({ theme }) => {
   return (
     <div className="">
       {/* home-section */}
-      <div className="mx-auto home md:flex content-center gap-14 sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 xxl:pb-36 lg:mb-4 xl:mb-40 xxl:mb-44 sm:px-8 lg:px-10 xl:px-14 xxl:px-48 relative">
-        <div className="home-text lg:pt-2 xl:pt-8 align-middle">
-          <h1 className="home-title sm:text-3xl lg:text-4xl xl:text-6xl xxl:text-7xl uppercase">
-            Automating <span>networks of any</span> size & scale.
-          </h1>
-          <p className="home-text font-normal sm:text-base md:text-sm lg:text-base xl:text-xl xxl:text-3xl text-justify py-6 lg:pr-4">
-            The OpenDaylight project is an open source platform for Software
-            Defined Networking (SDN) that uses open protocols to provide
-            centralized, programmatic control and network device monitoring.
-          </p>
-          <button
-            className="learn-button rounded-full"
-            href="https://www.opendaylight.org/"
-          >
-            Learn More
-          </button>
-        </div>
-        <div className="hidden md:block img-box mx-auto">
-          {theme === 'dark-theme' ? (
-            <img className="map" src={map_dark} alt="ODL Dark Logo" />
-          ) : (
-            <img className="map" src={map_light} alt="ODL Light Logo" />
-          )}
+      <div className=" home md:flex content-center gap-14 sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 xxl:pb-36 lg:mb-4 xl:mb-40 xxl:mb-44 sm:px-8 lg:px-10 xl:px-14 xxl:px-48 relative">
+        <div className="container mx-auto home grid md:grid-cols-2">
+          <div className="home-text lg:pt-2 xl:pt-8 align-middle">
+            <h1 className="home-title sm:text-3xl lg:text-4xl xl:text-6xl xxl:text-7xl uppercase">
+              Automating <span>networks of any</span> size & scale.
+            </h1>
+            <p className="home-text font-normal sm:text-base md:text-sm lg:text-base xl:text-xl xxl:text-3xl text-justify py-6 lg:pr-4">
+              The OpenDaylight project is an open source platform for Software
+              Defined Networking (SDN) that uses open protocols to provide
+              centralized, programmatic control and network device monitoring.
+            </p>
+            <button
+              className="learn-button rounded-full"
+              href="https://www.opendaylight.org/"
+            >
+              Learn More
+            </button>
+          </div>
+          <div className="hidden md:block img-box mx-auto">
+            {theme === 'dark-theme' ? (
+              <img className="map" src={map_dark} alt="ODL Dark Logo" />
+            ) : (
+              <img className="map" src={map_light} alt="ODL Light Logo" />
+            )}
+          </div>
         </div>
       </div>
       <hr className="md:hidden" />
@@ -76,11 +78,11 @@ const Homepage = ({ theme }) => {
         </div>
         {/* why opendaylight/functionality section */}
         <div className="function text-justify xl:my-4 xxl:my-12">
-          <h2 className="function-text ">
+          <h3 className="function-text ">
             <center className="sm:my-10 md:mt-24 xl:my-28 sm:text-3xl xl:text-4xl">
               Why Opendaylight?
             </center>
-          </h2>
+          </h3>
           <div className="grid sm:grid-rows-1 md:grid-rows-2 sm:py-10 xl:py-0 lg:px-10">
             <div className="functionality-row grid sm:grid-cols-1 md:grid-cols-3 sm:gap-16 md:gap-8 xl:gap-14 xxl:gap-16 mb-16 md:px-10 lg:px-0">
               <div className="flexibility">
