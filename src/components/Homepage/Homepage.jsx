@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Homepage.css'
 import map_light from '../../images/map_light.png'
 import map_dark from '../../images/map_dark.png'
@@ -26,7 +27,7 @@ const Homepage = ({ theme }) => {
   return (
     <div className="">
       {/* home-section */}
-      <div className=" home md:flex content-center sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 lg:mb-4 sm:px-8 lg:px-10 xl:px-14 xxl:px-16 relative">
+      <div className=" home md:flex content-center sm:py-12 xl:pt-16 md:pb-20 xl:pb-36 lg:mb-4 sm:px-8 lg:px-16 xl:px-14 xxl:px-16 relative">
         <div className="container mx-auto home gap-4 grid md:grid-cols-2 lg:pb-4 xl:pb-0">
           <div className="home-text lg:pt-2 xl:pt-8  justify-center">
             <h1 className="home-title sm:text-3xl lg:text-4xl xl:text-6xl xxl:text-7xl uppercase">
@@ -37,12 +38,9 @@ const Homepage = ({ theme }) => {
               Defined Networking (SDN) that uses open protocols to provide
               centralized, programmatic control and network device monitoring.
             </p>
-            <button
-              className="learn-button rounded-full"
-              href="https://www.opendaylight.org/"
-            >
-              Learn More
-            </button>
+            <Link to="/about">
+              <button className="learn-button rounded-full">Learn More</button>
+            </Link>
           </div>
           <div className="hidden md:block img-box mx-auto">
             {theme === 'dark-theme' ? (
