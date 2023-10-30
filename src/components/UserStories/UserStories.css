@@ -33,7 +33,7 @@
 }
 
 .odl-logo {
-  width: 1650px;
+  width: 1400px;
 }
 
 .user-stories {
@@ -100,6 +100,52 @@
 
 .card-image {
   width: 100px;
+}
+
+@media screen and (min-width: 2000px) {
+  .blue-box {
+    width: 2000px;
+    height: 800px;
+  }
+
+  .success-box {
+    top: 1500px;
+    left: 500px;
+    width: 600px;
+    height: 450px;
+    align-items: center;
+    display: flex;
+  }
+  .success-text {
+    font-size: 65px !important;
+  }
+
+  .asd-card,
+  .nro-card,
+  .nfv-card,
+  .visibility-card {
+    padding: 3rem;
+  }
+
+  .asd-card {
+    top: 1100px;
+    left: 45%;
+  }
+
+  .nro-card {
+    top: 1700px;
+    left: 45%;
+  }
+
+  .nfv-card {
+    top: 1050px;
+    left: 70%;
+  }
+
+  .visibility-card {
+    top: 1600px;
+    left: 70%;
+  }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1536px) {
@@ -217,7 +263,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 840px) {
   .odl-logo {
     width: 1200px;
     margin-bottom: 15px;
