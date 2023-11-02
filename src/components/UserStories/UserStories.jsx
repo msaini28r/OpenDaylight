@@ -184,10 +184,10 @@ const UserStories = () => {
               alt=""
             />
             <p className="sm:mb-5 lg:mb-5 xxl:mb-9 w-11/12 sm:text-sm xl:text-sm xxl:text-lg">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries.
+              OpenDaylight is Verizon’s foundational and directional SDN
+              controller with 2 use cases in production across the network. It
+              provides us with the ability to innovate at our own pace and helps
+              drive down both CapEx and OpEx.
             </p>
             <h4 className="testimonial-company sm:text-sm lg:text-xl xxl:text-2xl">
               - Verizon
