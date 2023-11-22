@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Homepage.css'
 import map_light from '../../images/map_light.png'
@@ -15,15 +15,35 @@ import icon_5 from '../../images/Icon_5.png'
 import icon_6 from '../../images/Icon_6.png'
 
 const Homepage = ({ theme }) => {
-  const [isChecked, setIsChecked] = useState(false)
+  // const [isChecked, setIsChecked] = useState(false)
 
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked)
-  }
+  // const handleCheckboxChange = () => {
+  //   setIsChecked(!isChecked)
+  // }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  // }
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = '//js.hsforms.net/forms/embed/v2.js'
+    document.body.appendChild(script)
+
+    script.onload = () => {
+      window.hbspt.forms.create({
+        region: 'na1',
+        portalId: '8112310',
+        formId: 'faa74a77-9d53-40ad-9d4c-b4f5a0c9342a',
+        sfdcCampaignId: '7012M000001nTe7QAE',
+        target: 'form',
+      })
+    }
+
+    // Cleanup
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
   return (
     <div className="">
       {/* home-section */}
@@ -198,63 +218,7 @@ const Homepage = ({ theme }) => {
             Stay Connected with the LF Networking Newsletter
           </h3>
           <div className="email-inputs">
-            <form onSubmit={handleSubmit}>
-              <div className="first-name mb-7">
-                <h5 className="mb-2">First Name*</h5>
-                <input
-                  className="input-box"
-                  type="text"
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-              <div className="last-name mb-7">
-                <h5 className="mb-2">Last Name*</h5>
-                <input
-                  className="input-box"
-                  type="text"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
-              <div className="last-name mb-7">
-                <h5 className="mb-2">Company Email*</h5>
-                <input
-                  className="input-box"
-                  type="email"
-                  placeholder="Company Email"
-                  required
-                />
-              </div>
-              <div className="email-text ml-1 mb-7 ">
-                <div className="flex items-start">
-                  <input
-                    type="checkbox"
-                    className="form-checkbox h-5 w-5 mt-0.5 text-indigo-600"
-                    checked={isChecked}
-                    onChange={handleCheckboxChange}
-                  />
-                  <label className="ml-2 email-text sm:text-xs xl:text-base">
-                    In addition, I would like to receive marketing emails about
-                    news, events, and training from The Linux Foundation and its
-                    Projects. I understand that I can unsubscribe at any time.
-                    <p className="mt-2">
-                      By submitting this form, I acknowledge that my information
-                      is subject to The Linux Foundation's Privacy Policy.
-                    </p>
-                  </label>
-                </div>
-              </div>
-              <div className="email-buttons text-center">
-                <button
-                  className="learn-button rounded-full uppercase"
-                  type="submit" // Specify the button type as "submit" to trigger form submission
-                  href="https://www.opendaylight.org/"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
+            <form id="form" className="form"></form>
           </div>
         </div>
       </div>
