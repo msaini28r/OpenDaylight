@@ -16,11 +16,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version:
+          node-version: '16' # Explicitly setting Node.js version to 16
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Build
         run: npm run build
+        # Add any additional build commands if needed
 
       - name: Deploy
         if: success() # Only runs if the previous step (Build) was successful
         run: npm run deploy
+        # Replace this with your deployment command/script
