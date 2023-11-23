@@ -11,20 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set Git Config
-        run: |
-          git config --global user.email "msaini0r@gmail.com"
-          git config --global user.name "Mohit"
-
       - uses: actions/checkout@v4
-
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-
       - run: npm install
       - run: npm ci
       - run: npm run build
-
       - run: npm run deploy
+      steps:
+      - name: Set Git Config
+        run: |
+          git config --global user.email "msaini0r@gmail.com"
+          git config --global user.name "msaini28r"
