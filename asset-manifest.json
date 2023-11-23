@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/opendaylight/static/css/main.b91480ac.css",
-    "main.js": "/opendaylight/static/js/main.3982d6ae.js",
+    "main.css": "/opendaylight/static/css/main.075bd212.css",
+    "main.js": "/opendaylight/static/js/main.9d89bfaa.js",
     "static/media/Casey.png": "/opendaylight/static/media/Casey.6b9c307531495fd2bbf1.png",
     "static/media/Robert.png": "/opendaylight/static/media/Robert.9b5abad6c9013904237f.png",
     "static/media/Manoj.png": "/opendaylight/static/media/Manoj.8457e5f3d656b8aeec7e.png",
@@ -30,11 +30,11 @@
     "static/media/shape_3.png": "/opendaylight/static/media/shape_3.69a430cd77ba07ac86ee.png",
     "static/media/maze_dark.png": "/opendaylight/static/media/maze_dark.47c2536d2d51e8b14210.png",
     "index.html": "/opendaylight/index.html",
-    "main.b91480ac.css.map": "/opendaylight/static/css/main.b91480ac.css.map",
-    "main.3982d6ae.js.map": "/opendaylight/static/js/main.3982d6ae.js.map"
+    "main.075bd212.css.map": "/opendaylight/static/css/main.075bd212.css.map",
+    "main.9d89bfaa.js.map": "/opendaylight/static/js/main.9d89bfaa.js.map"
   },
   "entrypoints": [
-    "static/css/main.b91480ac.css",
-    "static/js/main.3982d6ae.js"
+    "static/css/main.075bd212.css",
+    "static/js/main.9d89bfaa.js"
   ]
 }
