@@ -184,19 +184,32 @@ const About = ({ theme }) => {
               </ul>
             </p>
             <p>
-              See also the
+              See the
               <span>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.youtube.com/user/opendaylightproject"
+                  href="https://www.youtube.com/@lfnetworking"
                   className="link"
                 >
                   {' '}
-                  YouTube channel{' '}
+                  LF Networking{' '}
                 </a>
               </span>
-              for other tutorials.
+              YouTube channel for the latest videos from our Developer Events!
+              Additionally, be sure to explore the{' '}
+              <span>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.youtube.com/@OpendaylightOrg"
+                  className="link"
+                >
+                  {' '}
+                  OpenDaylight{' '}
+                </a>
+              </span>
+              YouTube channel for various tutorials.
             </p>
           </div>
           <div className="training-image flex justify-center">
